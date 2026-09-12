@@ -9,7 +9,7 @@ Building reliable products from **interface to infrastructure** — with a focus
 <p>
   <a href="https://github.com/subahanpathan">GitHub</a> ·
   <a href="https://www.linkedin.com/">LinkedIn</a> ·
-  <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+  <a href="mailto:subahanpathan4@gmail.com">Email</a>
 </p>
 
 </div>
