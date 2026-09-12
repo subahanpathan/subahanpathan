@@ -153,6 +153,44 @@ Digital signing and document workflow application.
 
 ---
 
+<!-- PROJECTS_START -->
+### [quote-scraper](https://github.com/subahanpathan/quote-scraper)
+
+A beautiful desktop quote scraping app
+
+`Code` · ⭐ 0
+
+### [One-For-All](https://github.com/subahanpathan/One-For-All)
+
+Open-source engineering project.
+
+`HTML` · ⭐ 1
+
+### [DriveLens](https://github.com/subahanpathan/DriveLens)
+
+Open-source engineering project.
+
+`Python` · ⭐ 0
+
+### [-SubVerse](https://github.com/subahanpathan/-SubVerse)
+
+Open-source engineering project.
+
+`TypeScript` · ⭐ 0
+
+### [Bug-Tracker](https://github.com/subahanpathan/Bug-Tracker)
+
+Open-source engineering project.
+
+`JavaScript` · ⭐ 0
+
+### [signflow](https://github.com/subahanpathan/signflow)
+
+Open-source engineering project.
+
+`TypeScript` · ⭐ 0
+<!-- PROJECTS_END -->
+
 ## Engineering Metrics
 
 <div align="center">
