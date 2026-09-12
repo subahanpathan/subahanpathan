@@ -195,24 +195,30 @@ Open-source engineering project.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=subahanpathan&show_icons=true&hide_border=true&rank_icon=github&theme=transparent&include_all_commits=true" height="170" alt="GitHub statistics"/>
+<img
+  src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
+  height="170"
+  alt="GitHub engineering metrics"
+/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=subahanpathan&layout=compact&hide_border=true&theme=transparent&langs_count=8" height="170" alt="Top languages"/>
+<img
+  src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/languages.svg"
+  height="170"
+  alt="Top programming languages"
+/>
 
 </div>
-
-> **Note:** These cards are optional. If GitHub blocks or delays the external stats service, the rest of this README remains fully functional.
-
 ---
-
 ## Contribution Activity
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg" alt="GitHub contribution activity"/>
+<img
+  src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
+  alt="GitHub contribution activity"
+/>
 
 </div>
-
 ---
 
 ## Engineering Principles
