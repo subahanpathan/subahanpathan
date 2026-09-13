@@ -13,14 +13,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # ---------------------------------------------------------
+      # Checkout
+      # ---------------------------------------------------------
+
       - name: Checkout repository
         uses: actions/checkout@v4
+
+
+      # ---------------------------------------------------------
+      # Python profile metrics
+      # ---------------------------------------------------------
 
       - name: Generate profile metrics
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/generate_stats.py
+
+
+      # ---------------------------------------------------------
+      # Contribution snake
+      # ---------------------------------------------------------
 
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
@@ -32,10 +47,20 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+
+      # ---------------------------------------------------------
+      # Node.js
+      # ---------------------------------------------------------
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+
+      # ---------------------------------------------------------
+      # Playwright
+      # ---------------------------------------------------------
 
       - name: Install Playwright
         run: |
@@ -43,9 +68,19 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
+
+      # ---------------------------------------------------------
+      # Capture live project previews
+      # ---------------------------------------------------------
+
       - name: Capture live project previews
         run: |
           node scripts/capture_projects.js
+
+
+      # ---------------------------------------------------------
+      # Publish everything
+      # ---------------------------------------------------------
 
       - name: Publish generated files
         uses: crazy-max/ghaction-github-pages@v4
