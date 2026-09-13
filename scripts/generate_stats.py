@@ -1,28 +1,14 @@
 import json
 import os
-import urllib.request
 import urllib.error
-from pathlib import Path
+import urllib.request
 from collections import defaultdict
+from pathlib import Path
 
 
 USERNAME = "subahanpathan"
 OUTPUT_DIR = Path("dist/profile")
-
 API_BASE = "https://api.github.com"
-
-COLORS = [
-    "#3178C6",  # TypeScript
-    "#F7DF1E",  # JavaScript
-    "#E34F26",  # HTML
-    "#3776AB",  # Python
-    "#1572B6",  # CSS
-    "#22C55E",  # Shell
-    "#A855F7",
-    "#06B6D4",
-    "#F97316",
-    "#94A3B8",
-]
 
 LANGUAGE_COLORS = {
     "TypeScript": "#3178C6",
@@ -45,10 +31,18 @@ LANGUAGE_COLORS = {
     "Jupyter Notebook": "#DA5B0B",
 }
 
+FALLBACK_COLORS = [
+    "#60A5FA",
+    "#A78BFA",
+    "#22D3EE",
+    "#34D399",
+    "#F59E0B",
+    "#FB7185",
+    "#94A3B8",
+]
+
 
 def github_request(endpoint):
-    url = f"{API_BASE}{endpoint}"
-
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "github-profile-metrics",
@@ -56,54 +50,38 @@ def github_request(endpoint):
     }
 
     token = os.getenv("GH_TOKEN")
-
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
     request = urllib.request.Request(
-        url,
+        f"{API_BASE}{endpoint}",
         headers=headers,
     )
 
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             return json.loads(response.read().decode("utf-8"))
-
     except urllib.error.HTTPError as error:
-        print(f"GitHub API error {error.code}: {url}")
-
-        if error.code == 403:
-            print("GitHub API rate limit may have been exceeded.")
-
-        raise
-
-    except Exception as error:
-        print(f"Request failed: {error}")
+        print(f"GitHub API error {error.code}: {endpoint}")
         raise
 
 
 def get_profile():
-    print(f"Fetching GitHub profile: {USERNAME}")
-
-    return github_request(
-        f"/users/{USERNAME}"
-    )
+    return github_request(f"/users/{USERNAME}")
 
 
 def get_repositories():
     repositories = []
-
     page = 1
 
     while True:
-        print(f"Fetching repositories page {page}")
-
         data = github_request(
             f"/users/{USERNAME}/repos"
             f"?per_page=100"
             f"&page={page}"
             f"&type=all"
             f"&sort=updated"
+            f"&direction=desc"
         )
 
         if not data:
@@ -127,10 +105,10 @@ def get_languages(repository):
         return github_request(
             f"/repos/{owner}/{name}/languages"
         )
-
-    except Exception:
+    except Exception as error:
         print(
-            f"Unable to fetch languages for {owner}/{name}"
+            f"Unable to fetch languages for "
+            f"{owner}/{name}: {error}"
         )
         return {}
 
@@ -139,55 +117,46 @@ def collect_language_statistics(repositories):
     totals = defaultdict(int)
 
     for repository in repositories:
-
-        # Skip forks so the profile reflects the user's
-        # own engineering work more accurately.
         if repository.get("fork"):
             continue
 
-        name = repository.get("name")
+        if repository.get("archived"):
+            continue
 
-        print(f"Fetching languages: {name}")
+        print(
+            f"Fetching languages: "
+            f"{repository.get('name')}"
+        )
 
         languages = get_languages(repository)
 
-        for language, bytes_count in languages.items():
-            totals[language] += bytes_count
+        for language, byte_count in languages.items():
+            totals[language] += byte_count
 
     total_bytes = sum(totals.values())
 
     if total_bytes == 0:
         return []
 
-    languages = []
-
-    for language, bytes_count in totals.items():
-
-        percentage = (
-            bytes_count / total_bytes
-        ) * 100
-
-        languages.append(
-            {
-                "name": language,
-                "bytes": bytes_count,
-                "percentage": percentage,
-            }
-        )
+    languages = [
+        {
+            "name": language,
+            "bytes": byte_count,
+            "percentage": (byte_count / total_bytes) * 100,
+        }
+        for language, byte_count in totals.items()
+    ]
 
     languages.sort(
         key=lambda item: item["bytes"],
         reverse=True,
     )
 
-    # Keep the dashboard readable.
-    # Combine everything below the sixth language
-    # into "Other".
-    top_languages = languages[:6]
+    top_languages = languages[:7]
 
     other_bytes = sum(
         item["bytes"]
-        for item in languages[6:]
+        for item in languages[7:]
     )
 
     if other_bytes > 0:
@@ -205,8 +174,6 @@ def collect_language_statistics(repositories):
 
 
 def esc(value):
-    """Escape text safely for SVG."""
-
     return (
         str(value)
         .replace("&", "&amp;")
@@ -217,46 +184,83 @@ def esc(value):
     )
 
 
-def language_color(language, index):
-    return LANGUAGE_COLORS.get(
-        language,
-        COLORS[index % len(COLORS)],
-    )
+def color_for(language, index):
+    if language in LANGUAGE_COLORS:
+        return LANGUAGE_COLORS[language]
+
+    return FALLBACK_COLORS[
+        index % len(FALLBACK_COLORS)
+    ]
+
+
+def metric_card(x, y, width, height, label, value, subtitle, accent):
+    return f"""
+    <g>
+      <rect
+        x="{x}" y="{y}"
+        width="{width}" height="{height}"
+        rx="16"
+        fill="#0B1220"
+        stroke="#26364D"
+        stroke-width="1"
+      />
+
+      <rect
+        x="{x + 20}" y="{y + 20}"
+        width="4" height="44"
+        rx="2"
+        fill="{accent}"
+      />
+
+      <text
+        x="{x + 38}" y="{y + 36}"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="14"
+        font-weight="600"
+        fill="#94A3B8"
+      >{esc(label)}</text>
+
+      <text
+        x="{x + 20}" y="{y + 96}"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="34"
+        font-weight="800"
+        fill="{accent}"
+      >{esc(value)}</text>
+
+      <text
+        x="{x + 20}" y="{y + 124}"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="12"
+        fill="#64748B"
+      >{esc(subtitle)}</text>
+    </g>
+    """
 
 
 def donut_segments(languages, cx, cy, radius):
     circumference = 2 * 3.14159265359 * radius
-
     segments = []
-
     offset = 0
 
     for index, language in enumerate(languages):
-
         percentage = language["percentage"]
-
-        length = (
-            percentage / 100
-        ) * circumference
-
-        color = language_color(
-            language["name"],
-            index,
-        )
+        length = (percentage / 100) * circumference
+        color = color_for(language["name"], index)
 
         segments.append(
             f"""
             <circle
-                cx="{cx}"
-                cy="{cy}"
-                r="{radius}"
-                fill="none"
-                stroke="{color}"
-                stroke-width="32"
-                stroke-linecap="butt"
-                stroke-dasharray="{length:.2f} {circumference:.2f}"
-                stroke-dashoffset="{-offset:.2f}"
-                transform="rotate(-90 {cx} {cy})"
+              cx="{cx}"
+              cy="{cy}"
+              r="{radius}"
+              fill="none"
+              stroke="{color}"
+              stroke-width="30"
+              stroke-linecap="butt"
+              stroke-dasharray="{length:.2f} {circumference:.2f}"
+              stroke-dashoffset="{-offset:.2f}"
+              transform="rotate(-90 {cx} {cy})"
             />
             """
         )
@@ -266,591 +270,274 @@ def donut_segments(languages, cx, cy, radius):
     return "\n".join(segments)
 
 
-def metric_card(
-    x,
-    y,
-    width,
-    height,
-    title,
-    value,
-    subtitle,
-    accent,
-    icon,
-):
-    return f"""
-    <g>
-
-        <rect
-            x="{x}"
-            y="{y}"
-            width="{width}"
-            height="{height}"
-            rx="16"
-            fill="#0B1220"
-            stroke="{accent}"
-            stroke-opacity="0.65"
-            stroke-width="1.4"
-        />
-
-        <rect
-            x="{x + 20}"
-            y="{y + 20}"
-            width="48"
-            height="48"
-            rx="14"
-            fill="{accent}"
-            fill-opacity="0.18"
-        />
-
-        <text
-            x="{x + 44}"
-            y="{y + 51}"
-            text-anchor="middle"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="22"
-            font-weight="700"
-            fill="{accent}"
-        >{esc(icon)}</text>
-
-        <text
-            x="{x + 84}"
-            y="{y + 41}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="16"
-            font-weight="600"
-            fill="#E5E7EB"
-        >{esc(title)}</text>
-
-        <text
-            x="{x + 24}"
-            y="{y + 94}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="34"
-            font-weight="800"
-            fill="{accent}"
-        >{esc(value)}</text>
-
-        <text
-            x="{x + 24}"
-            y="{y + 122}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="13"
-            fill="#94A3B8"
-        >{esc(subtitle)}</text>
-
-    </g>
-    """
-
-
 def generate_svg(profile, repositories, languages):
     width = 1600
-    height = 870
+    height = 900
 
-    public_repositories = profile.get(
-        "public_repos",
-        0,
-    )
+    own_repositories = [
+        repository
+        for repository in repositories
+        if not repository.get("fork")
+    ]
 
-    followers = profile.get(
-        "followers",
-        0,
-    )
+    active_repositories = [
+        repository
+        for repository in own_repositories
+        if not repository.get("archived")
+    ]
 
-    public_gists = profile.get(
-        "public_gists",
-        0,
-    )
+    public_repositories = profile.get("public_repos", 0)
+    followers = profile.get("followers", 0)
+    public_gists = profile.get("public_gists", 0)
 
     total_stars = sum(
         repository.get("stargazers_count", 0)
-        for repository in repositories
-        if not repository.get("fork")
+        for repository in own_repositories
     )
 
     total_forks = sum(
         repository.get("forks_count", 0)
-        for repository in repositories
-        if not repository.get("fork")
+        for repository in own_repositories
     )
+
+    active_count = len(active_repositories)
 
     svg = f"""<?xml version="1.0" encoding="UTF-8"?>
-
 <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="{width}"
-    height="{height}"
-    viewBox="0 0 {width} {height}"
+  xmlns="http://www.w3.org/2000/svg"
+  width="{width}"
+  height="{height}"
+  viewBox="0 0 {width} {height}"
 >
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050A14"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
 
-    <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
 
-        <linearGradient
-            id="background"
-            x1="0"
-            y1="0"
-            x2="1"
-            y2="1"
-        >
-            <stop
-                offset="0%"
-                stop-color="#050A14"
-            />
+  <rect width="{width}" height="{height}" fill="url(#bg)"/>
 
-            <stop
-                offset="100%"
-                stop-color="#0B1220"
-            />
-        </linearGradient>
+  <text
+    x="44" y="58"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="36"
+    font-weight="800"
+    fill="#F8FAFC"
+  >05 · ENGINEERING METRICS</text>
 
-        <linearGradient
-            id="headerGlow"
-            x1="0"
-            y1="0"
-            x2="1"
-            y2="0"
-        >
-            <stop
-                offset="0%"
-                stop-color="#60A5FA"
-            />
+  <text
+    x="46" y="90"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="17"
+    fill="#94A3B8"
+  >Live repository signals generated from GitHub activity.</text>
 
-            <stop
-                offset="50%"
-                stop-color="#A78BFA"
-            />
+  <rect
+    x="46" y="110"
+    width="1508" height="3"
+    rx="1.5"
+    fill="url(#accent)"
+  />
 
-            <stop
-                offset="100%"
-                stop-color="#22D3EE"
-            />
-        </linearGradient>
+  <rect
+    x="44" y="138"
+    width="1512" height="270"
+    rx="18"
+    fill="#08101E"
+    stroke="#26364D"
+    stroke-width="1"
+  />
 
-        <filter
-            id="shadow"
-            x="-20%"
-            y="-20%"
-            width="140%"
-            height="140%"
-        >
-            <feDropShadow
-                dx="0"
-                dy="8"
-                stdDeviation="12"
-                flood-color="#000000"
-                flood-opacity="0.35"
-            />
-        </filter>
+  <text
+    x="70" y="180"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="23"
+    font-weight="700"
+    fill="#F8FAFC"
+  >GitHub Engineering Metrics</text>
 
-    </defs>
+  {metric_card(68, 205, 275, 155, "PUBLIC REPOSITORIES", public_repositories, "Repositories visible publicly", "#22C55E")}
+  {metric_card(365, 205, 275, 155, "TOTAL STARS", total_stars, "Stars across your projects", "#60A5FA")}
+  {metric_card(662, 205, 275, 155, "TOTAL FORKS", total_forks, "Forks across your projects", "#A78BFA")}
+  {metric_card(959, 205, 275, 155, "FOLLOWERS", followers, "People following you", "#22D3EE")}
+  {metric_card(1256, 205, 275, 155, "ACTIVE REPOSITORIES", active_count, "Non-archived own repos", "#F59E0B")}
 
+  <rect
+    x="44" y="430"
+    width="1512" height="390"
+    rx="18"
+    fill="#08101E"
+    stroke="#26364D"
+    stroke-width="1"
+  />
 
-    <!-- Background -->
+  <text
+    x="70" y="476"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="23"
+    font-weight="700"
+    fill="#F8FAFC"
+  >Language Profile</text>
 
-    <rect
-        width="{width}"
-        height="{height}"
-        fill="url(#background)"
-    />
-
-
-    <!-- Header -->
-
-    <text
-        x="44"
-        y="58"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="36"
-        font-weight="800"
-        fill="#F8FAFC"
-    >
-        05 · ENGINEERING METRICS
-    </text>
-
-    <text
-        x="46"
-        y="90"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="17"
-        fill="#94A3B8"
-    >
-        Real activity. Real contributions. Real progress.
-    </text>
-
-    <line
-        x1="46"
-        y1="112"
-        x2="1554"
-        y2="112"
-        stroke="#334155"
-        stroke-width="1"
-    />
-
-
-    <!-- GitHub Metrics Panel -->
-
-    <rect
-        x="44"
-        y="138"
-        width="1512"
-        height="278"
-        rx="18"
-        fill="#08101E"
-        stroke="#26364D"
-        stroke-width="1"
-        filter="url(#shadow)"
-    />
-
-    <text
-        x="70"
-        y="182"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="23"
-        font-weight="700"
-        fill="#F8FAFC"
-    >
-        GitHub Engineering Metrics
-    </text>
-
-
-    <!-- Metric Cards -->
-
-    {metric_card(
-        68,
-        208,
-        275,
-        160,
-        "Public repositories",
-        public_repositories,
-        "Total repositories",
-        "#22C55E",
-        "▣",
-    )}
-
-    {metric_card(
-        365,
-        208,
-        275,
-        160,
-        "Total stars",
-        total_stars,
-        "Stars across your projects",
-        "#3B82F6",
-        "☆",
-    )}
-
-    {metric_card(
-        662,
-        208,
-        275,
-        160,
-        "Total forks",
-        total_forks,
-        "Repositories forked",
-        "#A855F7",
-        "⑂",
-    )}
-
-    {metric_card(
-        959,
-        208,
-        275,
-        160,
-        "Followers",
-        followers,
-        "People following you",
-        "#06B6D4",
-        "♙",
-    )}
-
-    {metric_card(
-        1256,
-        208,
-        275,
-        160,
-        "Public gists",
-        public_gists,
-        "Gists you've created",
-        "#F59E0B",
-        "</>",
-    )}
-
-
-    <!-- Languages Panel -->
-
-    <rect
-        x="44"
-        y="438"
-        width="1512"
-        height="360"
-        rx="18"
-        fill="#08101E"
-        stroke="#26364D"
-        stroke-width="1"
-        filter="url(#shadow)"
-    />
-
-
-    <text
-        x="70"
-        y="485"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="23"
-        font-weight="700"
-        fill="#F8FAFC"
-    >
-        Top Languages
-    </text>
-
-    <text
-        x="70"
-        y="512"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="15"
-        fill="#94A3B8"
-    >
-        Languages you use most across your repositories.
-    </text>
-
-
-    <!-- Language bars -->
-
+  <text
+    x="70" y="503"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="15"
+    fill="#94A3B8"
+  >Aggregated by bytes across active, non-fork repositories.</text>
 """
 
-    bar_x = 240
-    bar_width = 545
-    label_x = 70
-    percentage_x = 820
+    visible = languages[:7]
 
-    start_y = 550
+    bar_x = 235
+    bar_width = 520
+    percentage_x = 790
+    label_x = 70
+    start_y = 548
     row_height = 39
 
-    max_languages = min(
-        len(languages),
-        6,
-    )
-
-    visible_languages = languages[
-        :max_languages
-    ]
-
-    for index, language in enumerate(
-        visible_languages
-    ):
-
-        y = start_y + (
-            index * row_height
-        )
-
+    for index, language in enumerate(visible):
+        y = start_y + index * row_height
         name = language["name"]
         percentage = language["percentage"]
+        color = color_for(name, index)
 
-        color = language_color(
-            name,
-            index,
+        fill_width = max(
+            8,
+            bar_width * min(percentage / 100, 1),
         )
-
-        display_percentage = (
-            f"{percentage:.1f}%"
-        )
-
-        bar_fill_width = (
-            bar_width
-            * min(
-                percentage / 100,
-                1,
-            )
-        )
-
-        # Keep very small languages visible.
-        if percentage > 0:
-            bar_fill_width = max(
-                bar_fill_width,
-                8,
-            )
 
         svg += f"""
         <text
-            x="{label_x}"
-            y="{y + 5}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="15"
-            font-weight="600"
-            fill="#E2E8F0"
-        >
-            {esc(name)}
-        </text>
+          x="{label_x}" y="{y + 5}"
+          font-family="Segoe UI, Arial, sans-serif"
+          font-size="15"
+          font-weight="600"
+          fill="#E2E8F0"
+        >{esc(name)}</text>
 
         <rect
-            x="{bar_x}"
-            y="{y - 12}"
-            width="{bar_width}"
-            height="14"
-            rx="7"
-            fill="#142238"
+          x="{bar_x}" y="{y - 12}"
+          width="{bar_width}" height="14"
+          rx="7"
+          fill="#142238"
         />
 
         <rect
-            x="{bar_x}"
-            y="{y - 12}"
-            width="{bar_fill_width:.2f}"
-            height="14"
-            rx="7"
-            fill="{color}"
+          x="{bar_x}" y="{y - 12}"
+          width="{fill_width:.2f}" height="14"
+          rx="7"
+          fill="{color}"
         />
 
         <text
-            x="{percentage_x}"
-            y="{y + 5}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="15"
-            font-weight="700"
-            fill="#E2E8F0"
-        >
-            {display_percentage}
-        </text>
+          x="{percentage_x}" y="{y + 5}"
+          font-family="Segoe UI, Arial, sans-serif"
+          font-size="15"
+          font-weight="700"
+          fill="#E2E8F0"
+        >{percentage:.1f}%</text>
         """
 
-
-    # Divider
-
     svg += """
-    <line
-        x1="900"
-        y1="530"
-        x2="900"
-        y2="758"
-        stroke="#26364D"
-        stroke-width="1"
-    />
-    """
-
-
-    # Donut chart
+  <line
+    x1="900" y1="520"
+    x2="900" y2="785"
+    stroke="#26364D"
+    stroke-width="1"
+  />
+  """
 
     donut_cx = 1060
-    donut_cy = 645
-    donut_radius = 82
+    donut_cy = 648
+    donut_radius = 84
 
     svg += f"""
-    <circle
-        cx="{donut_cx}"
-        cy="{donut_cy}"
-        r="{donut_radius}"
-        fill="none"
-        stroke="#142238"
-        stroke-width="32"
-    />
+  <circle
+    cx="{donut_cx}" cy="{donut_cy}" r="{donut_radius}"
+    fill="none"
+    stroke="#142238"
+    stroke-width="30"
+  />
 
-    {donut_segments(
-        visible_languages,
-        donut_cx,
-        donut_cy,
-        donut_radius,
-    )}
+  {donut_segments(
+      visible,
+      donut_cx,
+      donut_cy,
+      donut_radius,
+  )}
 
-    <circle
-        cx="{donut_cx}"
-        cy="{donut_cy}"
-        r="58"
-        fill="#08101E"
-    />
+  <circle
+    cx="{donut_cx}" cy="{donut_cy}" r="59"
+    fill="#08101E"
+  />
 
-    <text
-        x="{donut_cx}"
-        y="{donut_cy - 2}"
-        text-anchor="middle"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="22"
-        font-weight="800"
-        fill="#F8FAFC"
-    >
-        100%
-    </text>
+  <text
+    x="{donut_cx}" y="{donut_cy - 2}"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="23"
+    font-weight="800"
+    fill="#F8FAFC"
+  >100%</text>
 
-    <text
-        x="{donut_cx}"
-        y="{donut_cy + 21}"
-        text-anchor="middle"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="12"
-        fill="#94A3B8"
-    >
-        Total Languages
-    </text>
+  <text
+    x="{donut_cx}" y="{donut_cy + 20}"
+    text-anchor="middle"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="12"
+    fill="#94A3B8"
+  >LANGUAGE MIX</text>
     """
-
-
-    # Donut legend
 
     legend_x = 1190
     legend_y = 565
 
-    for index, language in enumerate(
-        visible_languages
-    ):
-
-        y = (
-            legend_y
-            + index * 35
-        )
-
+    for index, language in enumerate(visible):
+        y = legend_y + index * 31
         name = language["name"]
         percentage = language["percentage"]
-
-        color = language_color(
-            name,
-            index,
-        )
+        color = color_for(name, index)
 
         svg += f"""
-        <circle
-            cx="{legend_x}"
-            cy="{y - 5}"
-            r="9"
-            fill="{color}"
-        />
+  <circle
+    cx="{legend_x}" cy="{y - 4}"
+    r="7"
+    fill="{color}"
+  />
 
-        <text
-            x="{legend_x + 24}"
-            y="{y}"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="14"
-            font-weight="600"
-            fill="#E2E8F0"
-        >
-            {esc(name)}
-        </text>
+  <text
+    x="{legend_x + 20}" y="{y}"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="14"
+    font-weight="600"
+    fill="#E2E8F0"
+  >{esc(name)}</text>
 
-        <text
-            x="1490"
-            y="{y}"
-            text-anchor="end"
-            font-family="Segoe UI, Arial, sans-serif"
-            font-size="14"
-            font-weight="700"
-            fill="#E2E8F0"
-        >
-            {percentage:.1f}%
-        </text>
+  <text
+    x="1490" y="{y}"
+    text-anchor="end"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="14"
+    font-weight="700"
+    fill="#E2E8F0"
+  >{percentage:.1f}%</text>
         """
 
-
-    # Footer
-
     svg += """
-    <text
-        x="46"
-        y="835"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="14"
-        fill="#94A3B8"
-    >
-        ◉  Automatically generated from GitHub activity using GitHub Actions.
-    </text>
-    """
-
-
-    svg += """
+  <text
+    x="46" y="860"
+    font-family="Segoe UI, Arial, sans-serif"
+    font-size="14"
+    fill="#64748B"
+  >Automatically generated with GitHub Actions · No manual edits required.</text>
 </svg>
 """
 
@@ -858,11 +545,9 @@ def generate_svg(profile, repositories, languages):
 
 
 def main():
-    print("")
-    print("=" * 60)
+    print("=" * 64)
     print(" GitHub Profile Metrics Generator")
-    print("=" * 60)
-    print("")
+    print("=" * 64)
 
     OUTPUT_DIR.mkdir(
         parents=True,
@@ -870,25 +555,16 @@ def main():
     )
 
     profile = get_profile()
-
     repositories = get_repositories()
 
     print(
-        f"Repositories discovered: {len(repositories)}"
+        f"Repositories discovered: "
+        f"{len(repositories)}"
     )
 
     languages = collect_language_statistics(
         repositories
     )
-
-    print("")
-    print("Top languages:")
-
-    for language in languages:
-        print(
-            f"  {language['name']}: "
-            f"{language['percentage']:.2f}%"
-        )
 
     svg = generate_svg(
         profile,
@@ -896,39 +572,17 @@ def main():
         languages,
     )
 
-    stats_path = (
-        OUTPUT_DIR
-        / "stats.svg"
-    )
+    for filename in (
+        "stats.svg",
+        "languages.svg",
+    ):
+        path = OUTPUT_DIR / filename
+        path.write_text(
+            svg,
+            encoding="utf-8",
+        )
+        print(f"✓ Generated {path}")
 
-    stats_path.write_text(
-        svg,
-        encoding="utf-8",
-    )
-
-    # Keep the existing languages.svg path
-    # available for compatibility with older
-    # README references.
-    languages_path = (
-        OUTPUT_DIR
-        / "languages.svg"
-    )
-
-    languages_path.write_text(
-        svg,
-        encoding="utf-8",
-    )
-
-    print("")
-    print(
-        f"✓ Generated: {stats_path}"
-    )
-
-    print(
-        f"✓ Generated: {languages_path}"
-    )
-
-    print("")
     print("Generation completed successfully.")
 
 
