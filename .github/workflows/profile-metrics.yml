@@ -8,34 +8,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: generate-profile-assets
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
 
     steps:
-
-      # ---------------------------------------------------------
-      # Checkout
-      # ---------------------------------------------------------
-
       - name: Checkout repository
         uses: actions/checkout@v4
-
-
-      # ---------------------------------------------------------
-      # Python profile metrics
-      # ---------------------------------------------------------
 
       - name: Generate profile metrics
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python scripts/generate_stats.py
-
-
-      # ---------------------------------------------------------
-      # Contribution snake
-      # ---------------------------------------------------------
+        run: python scripts/generate_stats.py
 
       - name: Generate contribution snake
         uses: Platane/snk/svg-only@v3
@@ -47,40 +35,37 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-
-      # ---------------------------------------------------------
-      # Node.js
-      # ---------------------------------------------------------
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-
-      # ---------------------------------------------------------
-      # Playwright
-      # ---------------------------------------------------------
-
       - name: Install Playwright
         run: |
           npm init -y
-          npm install playwright
+          npm install --no-audit --no-fund playwright
           npx playwright install --with-deps chromium
 
-
-      # ---------------------------------------------------------
-      # Capture live project previews
-      # ---------------------------------------------------------
-
       - name: Capture live project previews
+        run: node scripts/capture_projects.js
+
+      - name: Verify generated assets
         run: |
-          node scripts/capture_projects.js
+          test -s dist/profile/stats.svg
+          test -s dist/profile/languages.svg
 
-
-      # ---------------------------------------------------------
-      # Publish everything
-      # ---------------------------------------------------------
+          for file in \
+            dist/github-contribution-grid-snake.svg \
+            dist/github-contribution-grid-snake-dark.svg \
+            dist/previews/erp.png \
+            dist/previews/subverse.png \
+            dist/previews/meter-flow.png \
+            dist/previews/bug-tracker.png \
+            dist/previews/nexus-ai.png \
+            dist/previews/signflow.png
+          do
+            test -s "$file"
+          done
 
       - name: Publish generated files
         uses: crazy-max/ghaction-github-pages@v4
