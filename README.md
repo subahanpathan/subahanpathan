@@ -301,28 +301,20 @@ width="100%"
 
 ---
 
-# 05 · ENGINEERING METRICS
+## 05 · ENGINEERING METRICS
 
 <p align="center">
-
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
-height="170"
-alt="GitHub engineering metrics"
-/>
-
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/languages.svg"
-height="170"
-alt="Top programming languages"
-/>
-
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
+    alt="GitHub Engineering Metrics"
+    width="100%"
+  />
 </p>
 
 <p align="center">
-
-<sub>Automatically generated from GitHub activity using GitHub Actions.</sub>
-
+  <sub>
+    Automatically generated from GitHub activity using GitHub Actions.
+  </sub>
 </p>
 
 ---
