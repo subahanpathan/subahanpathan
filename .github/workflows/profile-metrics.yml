@@ -1,4 +1,4 @@
-name: Generate Profile Metrics
+name: Generate Profile Assets
 
 on:
   schedule:
@@ -31,6 +31,21 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Capture live project previews
+        run: |
+          node scripts/capture_projects.js
 
       - name: Publish generated files
         uses: crazy-max/ghaction-github-pages@v4
