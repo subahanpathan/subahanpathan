@@ -29,7 +29,11 @@ const projects = [
 ];
 
 async function main() {
-  const browser = await chromium.launch();
+  console.log("Starting project preview generation...");
+
+  const browser = await chromium.launch({
+    headless: true,
+  });
 
   const context = await browser.newContext({
     viewport: {
@@ -46,29 +50,33 @@ async function main() {
   });
 
   for (const project of projects) {
-    console.log(`Capturing ${project.name}...`);
+    console.log(`\nCapturing: ${project.name}`);
+    console.log(`URL: ${project.url}`);
 
     try {
       await page.goto(project.url, {
-        waitUntil: "networkidle",
-        timeout: 60000,
+        waitUntil: "domcontentloaded",
+        timeout: 90000,
       });
 
-      await page.waitForTimeout(3000);
+      // Give the application time to render.
+      await page.waitForTimeout(5000);
 
       await page.screenshot({
         path: `dist/previews/${project.name}.png`,
         fullPage: false,
       });
 
-      console.log(`✓ ${project.name}`);
+      console.log(`✓ Preview generated: ${project.name}.png`);
     } catch (error) {
-      console.error(`✗ ${project.name}`);
+      console.error(`✗ Failed: ${project.name}`);
       console.error(error.message);
     }
   }
 
   await browser.close();
+
+  console.log("\nPreview generation completed.");
 }
 
 main();
