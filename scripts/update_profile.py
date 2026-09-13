@@ -2,251 +2,246 @@ import json
 import os
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
+from pathlib import Path
 
 
-# ============================================================
-# Configuration
-# ============================================================
+USERNAME = "subahanpathan"
+README_PATH = Path("README.md")
+API_BASE = "https://api.github.com"
 
-USER = "subahanpathan"
-README = "README.md"
-
-START = "<!-- PROJECTS_START -->"
-END = "<!-- PROJECTS_END -->"
-
-GITHUB_API = (
-    f"https://api.github.com/users/{USER}/repos"
-    "?per_page=100&sort=updated&direction=desc"
-)
+START_MARKER = "<!-- PROJECTS_START -->"
+END_MARKER = "<!-- PROJECTS_END -->"
 
 
-# ============================================================
-# Fetch repositories from GitHub
-# ============================================================
+def github_request(endpoint):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "github-profile-project-index",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
 
-headers = {
-    "Accept": "application/vnd.github+json",
-    "X-GitHub-Api-Version": "2022-11-28",
-    "User-Agent": "profile-maintainer",
-}
+    token = os.getenv("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
 
-# Use token when available.
-token = os.environ.get("GH_TOKEN")
-
-if token:
-    headers["Authorization"] = f"Bearer {token}"
-
-
-request = urllib.request.Request(
-    GITHUB_API,
-    headers=headers,
-)
-
-
-try:
-    with urllib.request.urlopen(
-        request,
-        timeout=30,
-    ) as response:
-
-        repositories = json.load(response)
-
-except urllib.error.HTTPError as error:
-
-    print(f"GitHub API error: {error.code}")
-    print(error.read().decode("utf-8", errors="ignore"))
-    raise
-
-except urllib.error.URLError as error:
-
-    print(f"Network error: {error}")
-    raise
-
-
-# ============================================================
-# Filter repositories
-# ============================================================
-
-repositories = [
-    repo
-    for repo in repositories
-    if not repo.get("fork")
-    and not repo.get("archived")
-    and repo.get("name", "").lower() != USER.lower()
-]
-
-
-# ============================================================
-# Rank repositories
-# ============================================================
-
-repositories.sort(
-    key=lambda repo: (
-        bool(repo.get("description")),
-        repo.get("stargazers_count", 0),
-        repo.get("forks_count", 0),
-        repo.get("updated_at", ""),
-    ),
-    reverse=True,
-)
-
-
-# ============================================================
-# Select projects
-# ============================================================
-
-selected_projects = repositories[:6]
-
-
-# ============================================================
-# Generate project showcase
-# ============================================================
-
-project_sections = []
-
-
-for repository in selected_projects:
-
-    name = repository.get("name", "Project")
-
-    description = (
-        repository.get("description")
-        or "Open-source engineering project."
+    request = urllib.request.Request(
+        f"{API_BASE}{endpoint}",
+        headers=headers,
     )
 
-    description = (
-        description
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as error:
+        print(f"GitHub API error {error.code}: {endpoint}")
+        raise
+
+
+def get_repositories():
+    repositories = []
+    page = 1
+
+    while True:
+        data = github_request(
+            f"/users/{USERNAME}/repos"
+            f"?per_page=100"
+            f"&page={page}"
+            f"&type=all"
+            f"&sort=updated"
+            f"&direction=desc"
+        )
+
+        if not data:
+            break
+
+        repositories.extend(data)
+
+        if len(data) < 100:
+            break
+
+        page += 1
+
+    return repositories
+
+
+def escape_markdown(value):
+    return (
+        str(value)
+        .replace("\\", "\\\\")
+        .replace("|", "\\|")
         .replace("\n", " ")
         .strip()
     )
 
-    if len(description) > 150:
-        description = description[:147] + "..."
 
-    language = (
-        repository.get("language")
-        or "Code"
+def relative_time(iso_timestamp):
+    if not iso_timestamp:
+        return "—"
+
+    try:
+        updated = datetime.fromisoformat(
+            iso_timestamp.replace("Z", "+00:00")
+        )
+    except ValueError:
+        return "—"
+
+    delta = datetime.now(timezone.utc) - updated
+
+    if delta.days >= 365:
+        years = delta.days // 365
+        return f"{years}y ago"
+
+    if delta.days >= 30:
+        months = delta.days // 30
+        return f"{months}mo ago"
+
+    if delta.days >= 1:
+        return f"{delta.days}d ago"
+
+    hours = max(delta.seconds // 3600, 1)
+    return f"{hours}h ago"
+
+
+def score_repository(repository):
+    description_bonus = 20 if repository.get("description") else 0
+    stars = repository.get("stargazers_count", 0)
+    forks = repository.get("forks_count", 0)
+
+    updated_at = repository.get("updated_at", "")
+    try:
+        updated = datetime.fromisoformat(
+            updated_at.replace("Z", "+00:00")
+        ).timestamp()
+    except ValueError:
+        updated = 0
+
+    return (
+        description_bonus,
+        stars * 10,
+        forks * 5,
+        updated,
     )
 
-    stars = repository.get(
-        "stargazers_count",
-        0,
+
+def select_repositories(repositories):
+    candidates = []
+
+    for repository in repositories:
+        if repository.get("fork"):
+            continue
+
+        if repository.get("archived"):
+            continue
+
+        if repository.get("name") == USERNAME:
+            continue
+
+        candidates.append(repository)
+
+    candidates.sort(
+        key=score_repository,
+        reverse=True,
     )
 
-    project_url = (
-        f"https://github.com/{USER}/{name}"
+    return candidates[:10]
+
+
+def build_project_index(repositories):
+    lines = [
+        START_MARKER,
+        "## 11 · PROJECT INDEX",
+        "",
+        "_Automatically refreshed from GitHub repository activity._",
+        "",
+        "| Repository | Description | Stars | Updated |",
+        "|---|---|---:|---:|",
+    ]
+
+    for repository in repositories:
+        name = repository.get("name", "Repository")
+        url = repository.get("html_url", "#")
+        description = (
+            repository.get("description")
+            or "No repository description provided."
+        )
+
+        stars = repository.get("stargazers_count", 0)
+        updated = relative_time(repository.get("updated_at"))
+
+        lines.append(
+            f"| [{escape_markdown(name)}]({url}) "
+            f"| {escape_markdown(description)} "
+            f"| {stars} "
+            f"| {updated} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "_Featured production projects are maintained separately above._",
+            "",
+            END_MARKER,
+        ]
     )
 
-    project_sections.append(
-        f"### [{name}]({project_url})\n\n"
-        f"{description}\n\n"
-        f"`{language}` · ⭐ {stars}"
-    )
+    return "\n".join(lines)
 
 
-if project_sections:
+def replace_project_index(readme, generated_section):
+    if START_MARKER in readme and END_MARKER in readme:
+        start = readme.index(START_MARKER)
+        end = readme.index(END_MARKER) + len(END_MARKER)
 
-    generated_projects = "\n\n".join(
-        project_sections
-    )
+        return (
+            readme[:start]
+            + generated_section
+            + readme[end:]
+        )
 
-else:
+    metrics_heading = "## 05 · ENGINEERING METRICS"
 
-    generated_projects = (
-        "_Public projects will appear here automatically._"
-    )
-
-
-# ============================================================
-# Read README
-# ============================================================
-
-with open(
-    README,
-    "r",
-    encoding="utf-8",
-) as file:
-
-    content = file.read()
-
-
-# ============================================================
-# Create markers automatically if missing
-# ============================================================
-
-if START not in content or END not in content:
-
-    print("Project markers not found.")
-
-    marker_block = (
-        f"{START}\n"
-        f"{generated_projects}\n"
-        f"{END}"
-    )
-
-    # Prefer inserting before Engineering Metrics.
-    target_heading = "## Engineering Metrics"
-
-    if target_heading in content:
-
-        content = content.replace(
-            target_heading,
-            marker_block
-            + "\n\n"
-            + target_heading,
+    if metrics_heading in readme:
+        return readme.replace(
+            metrics_heading,
+            generated_section + "\n\n---\n\n" + metrics_heading,
             1,
         )
 
-    else:
-
-        # Fallback: append to README.
-        content = (
-            content.rstrip()
-            + "\n\n"
-            + marker_block
-            + "\n"
-        )
-
-    print("Project markers created automatically.")
+    return readme.rstrip() + "\n\n" + generated_section + "\n"
 
 
-# ============================================================
-# Replace project section
-# ============================================================
+def main():
+    print("Refreshing automated GitHub project index...")
 
-start_position = (
-    content.index(START)
-    + len(START)
-)
+    if not README_PATH.exists():
+        raise FileNotFoundError("README.md was not found.")
 
-end_position = content.index(
-    END,
-    start_position,
-)
+    repositories = get_repositories()
+    selected = select_repositories(repositories)
 
+    print(f"Repositories discovered: {len(repositories)}")
+    print(f"Repositories selected for index: {len(selected)}")
 
-updated_content = (
-    content[:start_position]
-    + "\n"
-    + generated_projects
-    + "\n"
-    + content[end_position:]
-)
+    generated_section = build_project_index(selected)
 
+    current_readme = README_PATH.read_text(encoding="utf-8")
+    updated_readme = replace_project_index(
+        current_readme,
+        generated_section,
+    )
 
-# ============================================================
-# Write README
-# ============================================================
+    if updated_readme == current_readme:
+        print("No README changes required.")
+        return
 
-with open(
-    README,
-    "w",
-    encoding="utf-8",
-) as file:
+    README_PATH.write_text(
+        updated_readme,
+        encoding="utf-8",
+    )
 
-    file.write(updated_content)
+    print("✓ README project index refreshed.")
 
 
-print(
-    f"Updated {len(selected_projects)} projects."
-)
+if __name__ == "__main__":
+    main()
