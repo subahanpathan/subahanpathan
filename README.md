@@ -4,14 +4,19 @@
 
 ### FULL-STACK ENGINEER · DEVOPS · CLOUD · AUTOMATION
 
-Building production-ready software across the full engineering lifecycle —  
-from product architecture and application development to CI/CD, infrastructure, and deployment.
+Building production-ready software with a focus on scalable architecture, reliable delivery, and practical automation.
 
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-18181B?style=flat-square&logo=github&logoColor=white)](https://github.com/subahanpathan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-18181B?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/subahan-pathan-a991a1337/)
-[![Projects](https://img.shields.io/badge/Projects-18181B?style=flat-square&logo=vercel&logoColor=white)](https://github.com/subahanpathan?tab=repositories)
+<p>
+  <a href="https://github.com/subahanpathan">
+    <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/subahanpathan?tab=repositories">
+    <img src="https://img.shields.io/badge/Projects-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Projects">
+  </a>
+</p>
 
 </div>
 
@@ -19,17 +24,18 @@ from product architecture and application development to CI/CD, infrastructure, 
 
 ## 01 · ENGINEERING PROFILE
 
-I design and build **full-stack applications and production systems** with a strong focus on maintainability, automation, and reliable delivery.
+I work across the full software lifecycle — from product interfaces and backend services to databases, cloud infrastructure, CI/CD, and operational automation.
 
-My work spans:
+My approach is simple:
 
-- **Application Engineering** — modern frontend and backend systems
-- **Backend Development** — APIs, services, authentication, and data workflows
-- **Cloud & Infrastructure** — deployment, containers, Linux, and cloud platforms
-- **DevOps** — CI/CD, automation, reproducible environments, and release workflows
-- **Engineering Automation** — reducing repetitive work through scripts and pipelines
+> **Build clean. Automate repeatable work. Ship reliably. Improve continuously.**
 
-> **Build software. Automate delivery. Operate reliably.**
+| Area | Focus |
+|---|---|
+| **Full-Stack Engineering** | React, Next.js, TypeScript, JavaScript, Node.js, Python |
+| **Backend & Data** | REST APIs, PostgreSQL, MongoDB, MySQL, Redis |
+| **DevOps & Cloud** | Docker, Kubernetes, AWS, Linux, Nginx, Terraform |
+| **Delivery & Automation** | Git, GitHub Actions, Jenkins, CI/CD, scripting, deployment automation |
 
 ---
 
@@ -37,51 +43,48 @@ My work spans:
 
 <table>
 <tr>
-<td width="25%" align="center">
+<td width="25%" valign="top">
 
-### FULL-STACK
+### Product Engineering
 
-Frontend  
-Backend  
-APIs  
-Authentication  
-Databases
-
-</td>
-
-<td width="25%" align="center">
-
-### CLOUD
-
-Cloud Platforms  
-Linux  
-Networking  
-Containers  
-Infrastructure
+- Responsive interfaces
+- Component-driven UI
+- API integration
+- Full-stack applications
+- Production deployments
 
 </td>
+<td width="25%" valign="top">
 
-<td width="25%" align="center">
+### Backend Systems
 
-### DEVOPS
-
-CI/CD  
-GitHub Actions  
-Docker  
-Deployment  
-Automation
+- REST APIs
+- Authentication
+- Data modeling
+- PostgreSQL / MongoDB
+- Service integration
 
 </td>
+<td width="25%" valign="top">
 
-<td width="25%" align="center">
+### DevOps & Cloud
 
-### ENGINEERING
+- Docker
+- Kubernetes
+- AWS
+- Linux / Nginx
+- Infrastructure as code
 
-Architecture  
-Testing  
-Security  
-Performance  
-Maintainability
+</td>
+<td width="25%" valign="top">
+
+### Automation
+
+- GitHub Actions
+- Jenkins
+- CI/CD pipelines
+- Bash / Python automation
+- Monitoring mindset
 
 </td>
 </tr>
@@ -91,211 +94,150 @@ Maintainability
 
 ## 03 · TECHNOLOGY STACK
 
-### Application Engineering
+**Application**
 
 <p>
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,python,html,css&perline=8" />
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,python,html,css" alt="Application technologies">
 </p>
 
-### Data & Services
+**Data**
 
 <p>
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql&perline=8" />
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql" alt="Data technologies">
 </p>
 
-### Cloud, DevOps & Infrastructure
+**Cloud & Infrastructure**
 
 <p>
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx&perline=8" />
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx" alt="Cloud and infrastructure technologies">
 </p>
 
-### Delivery & Tooling
+**Delivery & Tooling**
 
 <p>
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode&perline=8" />
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode" alt="Delivery and tooling technologies">
 </p>
 
 ---
 
-# 04 · FEATURED PRODUCTION WORK
-
-> Selected applications built, deployed, and maintained as part of my engineering portfolio.
+## 04 · FEATURED PRODUCTION WORK
 
 <table>
 <tr>
-
-<td width="33.33%" valign="top">
-
-<h3>🏢 ERP</h3>
-
-<p><strong>Enterprise Resource Planning</strong></p>
+<td width="50%" valign="top">
 
 <a href="https://erp-topaz-three.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png"
-alt="ERP live application preview"
-width="100%"
-/>
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP project preview">
 </a>
 
-<p>
-<code>Full-Stack</code>
-<code>Database</code>
-<code>Workflows</code>
-</p>
+### ERP
+
+Production web application focused on business workflow and operational management.
+
+**Stack:** Full-stack web · Database · Deployment
 
 <p>
-<a href="https://erp-topaz-three.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/ERP">SOURCE</a>
+  <a href="https://erp-topaz-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/ERP">Source</a>
 </p>
 
 </td>
-
-<td width="33.33%" valign="top">
-
-<h3>🌐 Sub-Verse</h3>
-
-<p><strong>Social & Community Platform</strong></p>
+<td width="50%" valign="top">
 
 <a href="https://sub-verse-six.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png"
-alt="Sub-Verse live application preview"
-width="100%"
-/>
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse project preview">
 </a>
 
-<p>
-<code>Full-Stack</code>
-<code>Web App</code>
-<code>UX</code>
-</p>
+### Sub-Verse
+
+A modern web experience built around interactive product-style presentation.
+
+**Stack:** React · Next.js · TypeScript · Deployment
 
 <p>
-<a href="https://sub-verse-six.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/-SubVerse">SOURCE</a>
+  <a href="https://sub-verse-six.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/-SubVerse">Source</a>
 </p>
 
 </td>
-
-<td width="33.33%" valign="top">
-
-<h3>📊 Meter Flow</h3>
-
-<p><strong>Meter & Data Management</strong></p>
-
-<a href="https://meter-flow-mu.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png"
-alt="Meter Flow live application preview"
-width="100%"
-/>
-</a>
-
-<p>
-<code>Dashboard</code>
-<code>Data</code>
-<code>Deployment</code>
-</p>
-
-<p>
-<a href="https://meter-flow-mu.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/meter-flow">SOURCE</a>
-</p>
-
-</td>
-
 </tr>
 
 <tr>
+<td width="50%" valign="top">
 
-<td width="33.33%" valign="top">
+<a href="https://meter-flow-mu.vercel.app/">
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow project preview">
+</a>
 
-<h3>🐞 Bug Tracker</h3>
+### Meter Flow
 
-<p><strong>Software Issue Management</strong></p>
+Web application for managing meter-oriented operational workflows and data.
+
+**Stack:** Full-stack web · Data · Deployment
+
+<p>
+  <a href="https://meter-flow-mu.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/meter-flow">Source</a>
+</p>
+
+</td>
+<td width="50%" valign="top">
 
 <a href="https://bug-tracker-omega-three.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png"
-alt="Bug Tracker live application preview"
-width="100%"
-/>
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker project preview">
 </a>
 
-<p>
-<code>Full-Stack</code>
-<code>CRUD</code>
-<code>Workflow</code>
-</p>
+### Bug Tracker
+
+Application for organizing software issues, tracking work, and improving development visibility.
+
+**Stack:** React · Node.js · Database · Deployment
 
 <p>
-<a href="https://bug-tracker-omega-three.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/Bug-Tracker">SOURCE</a>
+  <a href="https://bug-tracker-omega-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/Bug-Tracker">Source</a>
 </p>
 
 </td>
+</tr>
 
-<td width="33.33%" valign="top">
-
-<h3>🧠 Nexus AI</h3>
-
-<p><strong>AI-Powered Application</strong></p>
+<tr>
+<td width="50%" valign="top">
 
 <a href="https://nexus-ai-inky-iota.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png"
-alt="Nexus AI live application preview"
-width="100%"
-/>
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI project preview">
 </a>
 
-<p>
-<code>AI</code>
-<code>APIs</code>
-<code>Full-Stack</code>
-</p>
+### Nexus AI
+
+AI-focused application exploring practical interfaces and intelligent application workflows.
+
+**Stack:** AI · Full-stack web · API integration
 
 <p>
-<a href="https://nexus-ai-inky-iota.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/nexus-ai">SOURCE</a>
+  <a href="https://nexus-ai-inky-iota.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/nexus-ai">Source</a>
 </p>
 
 </td>
-
-<td width="33.33%" valign="top">
-
-<h3>✍️ SignFlow</h3>
-
-<p><strong>Digital Document Workflow</strong></p>
+<td width="50%" valign="top">
 
 <a href="https://signflow-olive-three.vercel.app/">
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png"
-alt="SignFlow live application preview"
-width="100%"
-/>
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview">
 </a>
 
-<p>
-<code>Workflow</code>
-<code>Frontend</code>
-<code>Deployment</code>
-</p>
+### SignFlow
+
+Web application centered around digital workflow and document-signing experiences.
+
+**Stack:** Full-stack web · Workflow · Deployment
 
 <p>
-<a href="https://signflow-olive-three.vercel.app/">🟢 LIVE</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/subahanpathan/signflow">SOURCE</a>
+  <a href="https://signflow-olive-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/signflow">Source</a>
 </p>
 
 </td>
-
 </tr>
 </table>
 
@@ -312,72 +254,88 @@ width="100%"
 </p>
 
 <p align="center">
-  <sub>
-    Automatically generated from GitHub activity using GitHub Actions.
-  </sub>
+  <sub>Automatically generated from GitHub activity using GitHub Actions.</sub>
 </p>
 
 ---
 
-# 06 · CONTRIBUTION ACTIVITY
+## 06 · CONTRIBUTION ACTIVITY
 
 <p align="center">
-
-<picture>
-
-<source
-media="(prefers-color-scheme: dark)"
-srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg"
-/>
-
-<source
-media="(prefers-color-scheme: light)"
-srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
-/>
-
-<img
-src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
-alt="GitHub contribution activity"
-/>
-
-</picture>
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation">
+  </picture>
 </p>
 
 ---
 
-# 07 · HOW I ENGINEER
+## 07 · HOW I ENGINEER
 
 ```text
-                         PRODUCT IDEA
-                              │
-                              ▼
-                         ARCHITECTURE
-                              │
-               ┌──────────────┴──────────────┐
-               │                             │
-               ▼                             ▼
-          FRONTEND                        BACKEND
-               │                             │
-               └──────────────┬──────────────┘
-                              │
-                              ▼
-                           DATABASE
-                              │
-                              ▼
-                           TESTING
-                              │
-                              ▼
-                       CONTAINERIZATION
-                              │
-                              ▼
-                           CI / CD
-                              │
-                              ▼
-                    CLOUD / INFRASTRUCTURE
-                              │
-                              ▼
-                         PRODUCTION
-                              │
-                              ▼
-                  MONITOR · IMPROVE · ITERATE
+IDEA
+  │
+  ▼
+DESIGN
+  │
+  ▼
+BUILD
+  │
+  ▼
+TEST
+  │
+  ▼
+AUTOMATE
+  │
+  ▼
+DEPLOY
+  │
+  ▼
+MONITOR
+  │
+  ▼
+IMPROVE ↺
+```
+
+---
+
+## 08 · ENGINEERING PRINCIPLES
+
+- **Clarity over complexity** — simple systems are easier to maintain.
+- **Automation over repetition** — repeatable work should become a pipeline.
+- **Security by default** — permissions and secrets should be intentional.
+- **Observability matters** — production systems need useful signals.
+- **Ship, measure, improve** — delivery is a loop, not a finish line.
+
+---
+
+## 09 · CURRENT DIRECTION
+
+I'm focused on building stronger systems across:
+
+**Full-Stack Development · DevOps · Cloud Infrastructure · CI/CD · Automation · AI-enabled Applications**
+
+---
+
+## 10 · LET'S CONNECT
+
+<p align="center">
+  <a href="https://github.com/subahanpathan">
+    <img src="https://img.shields.io/badge/GitHub-View%20Profile-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile">
+  </a>
+  <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn profile">
+  </a>
+</p>
+
+<!-- PROJECTS_START -->
+## 11 · PROJECT INDEX
+
+_Refreshing automatically from GitHub repository activity._
+
+<!-- PROJECTS_END -->
+
+<p align="center">
+  <sub>Designed and maintained as an automated engineering profile.</sub>
+</p>
