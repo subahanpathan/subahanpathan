@@ -2,9 +2,19 @@
 
 # SUBAHAN PATHAN
 
-### FULL-STACK ENGINEER · DEVOPS · CLOUD · AUTOMATION
+<img
+  src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=850&lines=FULL-STACK+ENGINEER;DEVOPS+%C2%B7+CLOUD+ENGINEER;AUTOMATION+%C2%B7+CI%2FCD;AI+APPLICATION+BUILDER"
+  alt="Dynamic engineering roles"
+/>
 
-Building production-ready software with a focus on scalable architecture, reliable delivery, and practical automation.
+Building scalable applications, reliable infrastructure, and automated delivery systems.
+
+<p>
+  <img src="https://img.shields.io/badge/ENGINEERING-FULL--STACK-111827?style=for-the-badge" alt="Full-stack engineering">
+  <img src="https://img.shields.io/badge/DEVOPS-CLOUD-111827?style=for-the-badge" alt="DevOps and Cloud">
+  <img src="https://img.shields.io/badge/AUTOMATION-CI%2FCD-111827?style=for-the-badge" alt="Automation and CI/CD">
+  <img src="https://img.shields.io/badge/AI-APPLICATIONS-111827?style=for-the-badge" alt="AI applications">
+</p>
 
 <p>
   <a href="https://github.com/subahanpathan">
@@ -19,6 +29,8 @@ Building production-ready software with a focus on scalable architecture, reliab
 </p>
 
 </div>
+
+---
 
 ---
 
