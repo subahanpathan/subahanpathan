@@ -119,62 +119,92 @@ Maintainability
 
 # 04 · FEATURED PRODUCTION WORK
 
-> Live applications built and deployed as part of my engineering portfolio.
+> Selected applications built, deployed, and maintained as part of my engineering portfolio.
 
 <table>
 <tr>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### 🏢 ERP
+<h3>🏢 ERP</h3>
 
-**Enterprise Resource Planning**
+<p><strong>Enterprise Resource Planning</strong></p>
 
+<a href="https://erp-topaz-three.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png"
 alt="ERP live application preview"
 width="100%"
 />
+</a>
 
-`Full-Stack` · `Database` · `Workflows`
+<p>
+<code>Full-Stack</code>
+<code>Database</code>
+<code>Workflows</code>
+</p>
 
-**[ LIVE ↗ ](https://erp-topaz-three.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/ERP)**
+<p>
+<a href="https://erp-topaz-three.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/ERP">SOURCE</a>
+</p>
 
 </td>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### 🌐 Sub-Verse
+<h3>🌐 Sub-Verse</h3>
 
-**Social & Community Platform**
+<p><strong>Social & Community Platform</strong></p>
 
+<a href="https://sub-verse-six.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png"
 alt="Sub-Verse live application preview"
 width="100%"
 />
+</a>
 
-`Full-Stack` · `Web App` · `UX`
+<p>
+<code>Full-Stack</code>
+<code>Web App</code>
+<code>UX</code>
+</p>
 
-**[ LIVE ↗ ](https://sub-verse-six.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/-SubVerse)**
+<p>
+<a href="https://sub-verse-six.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/-SubVerse">SOURCE</a>
+</p>
 
 </td>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### 📊 Meter Flow
+<h3>📊 Meter Flow</h3>
 
-**Meter & Data Management**
+<p><strong>Meter & Data Management</strong></p>
 
+<a href="https://meter-flow-mu.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png"
 alt="Meter Flow live application preview"
 width="100%"
 />
+</a>
 
-`Dashboard` · `Data` · `Deployment`
+<p>
+<code>Dashboard</code>
+<code>Data</code>
+<code>Deployment</code>
+</p>
 
-**[ LIVE ↗ ](https://meter-flow-mu.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/meter-flow)**
+<p>
+<a href="https://meter-flow-mu.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/meter-flow">SOURCE</a>
+</p>
 
 </td>
 
@@ -182,57 +212,87 @@ width="100%"
 
 <tr>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### 🐞 Bug Tracker
+<h3>🐞 Bug Tracker</h3>
 
-**Software Issue Management**
+<p><strong>Software Issue Management</strong></p>
 
+<a href="https://bug-tracker-omega-three.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png"
 alt="Bug Tracker live application preview"
 width="100%"
 />
+</a>
 
-`Full-Stack` · `CRUD` · `Workflow`
+<p>
+<code>Full-Stack</code>
+<code>CRUD</code>
+<code>Workflow</code>
+</p>
 
-**[ LIVE ↗ ](https://bug-tracker-omega-three.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/Bug-Tracker)**
+<p>
+<a href="https://bug-tracker-omega-three.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/Bug-Tracker">SOURCE</a>
+</p>
 
 </td>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### 🧠 Nexus AI
+<h3>🧠 Nexus AI</h3>
 
-**AI-Powered Application**
+<p><strong>AI-Powered Application</strong></p>
 
+<a href="https://nexus-ai-inky-iota.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png"
 alt="Nexus AI live application preview"
 width="100%"
 />
+</a>
 
-`AI` · `APIs` · `Full-Stack`
+<p>
+<code>AI</code>
+<code>APIs</code>
+<code>Full-Stack</code>
+</p>
 
-**[ LIVE ↗ ](https://nexus-ai-inky-iota.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/nexus-ai)**
+<p>
+<a href="https://nexus-ai-inky-iota.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/nexus-ai">SOURCE</a>
+</p>
 
 </td>
 
-<td width="33%" valign="top">
+<td width="33.33%" valign="top">
 
-### ✍️ SignFlow
+<h3>✍️ SignFlow</h3>
 
-**Digital Document Workflow**
+<p><strong>Digital Document Workflow</strong></p>
 
+<a href="https://signflow-olive-three.vercel.app/">
 <img
 src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png"
 alt="SignFlow live application preview"
 width="100%"
 />
+</a>
 
-`Workflow` · `Frontend` · `Deployment`
+<p>
+<code>Workflow</code>
+<code>Frontend</code>
+<code>Deployment</code>
+</p>
 
-**[ LIVE ↗ ](https://signflow-olive-three.vercel.app/) · [ SOURCE ↗ ](https://github.com/subahanpathan/signflow)**
+<p>
+<a href="https://signflow-olive-three.vercel.app/">🟢 LIVE</a>
+&nbsp;·&nbsp;
+<a href="https://github.com/subahanpathan/signflow">SOURCE</a>
+</p>
 
 </td>
 
