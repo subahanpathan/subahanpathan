@@ -238,6 +238,17 @@ AI-focused application exploring practical interfaces and intelligent applicatio
   <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview">
 </a>
 
+### One-For-All
+
+Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects
+
+**Stack:**Education Platform · Web Application · Interactive Learning
+
+<p>
+  <a href="https://subahanpathan.github.io/One-For-All/">Live Preview</a> ·
+  <a href="https://subahanpathan.github.io/One-For-All/">Source</a>
+</p>
+
 ### SignFlow
 
 Web application centered around digital workflow and document-signing experiences.
