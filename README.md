@@ -258,6 +258,35 @@ Educational platform for Class 10 students featuring chapter-wise study resource
 
 </td>
 
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://subahanpathan.github.io/One-For-All/">
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview">
+</a>
+
+### One-For-All
+
+Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects.
+
+**Stack:** Education Platform · Web Application · Interactive Learning
+
+<p>
+  <a href="https://subahanpathan.github.io/One-For-All/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/One-For-All">Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://signflow-olive-three.vercel.app/">
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview">
+</a>
+
 ### SignFlow
 
 Web application centered around digital workflow and document-signing experiences.
@@ -271,8 +300,8 @@ Web application centered around digital workflow and document-signing experience
 
 </td>
 </tr>
-</table>
 
+</table>
 ---
 
 ## 05 · ENGINEERING METRICS
