@@ -238,13 +238,6 @@ AI-focused application exploring practical interfaces and intelligent applicatio
   <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview">
 </a>
 
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://subahanpathan.github.io/One-For-All/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview">
-</a>
-
 ### SignFlow
 
 Web application centered around digital workflow and document-signing experiences.
@@ -259,6 +252,13 @@ Web application centered around digital workflow and document-signing experience
 </td>
 </tr>
 
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://subahanpathan.github.io/One-For-All/">
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview">
+</a>
+
 ### One-For-All
 
 Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects.
@@ -271,16 +271,7 @@ Educational platform for Class 10 students featuring chapter-wise study resource
 </p>
 
 </td>
-
-</td>
 </tr>
-
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://subahanpathan.github.io/One-For-All/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview">
-</a>
 
 </table>
 ---
