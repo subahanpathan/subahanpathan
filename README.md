@@ -271,7 +271,8 @@ Educational platform for Class 10 students featuring chapter-wise study resource
 </td>
 </tr>
 
-<tr>
+<td width="50%" valign="top">
+
 <a href="https://medisafe-platform.vercel.app/">
   <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MediSafe project preview">
 </a>
@@ -288,7 +289,6 @@ Healthcare platform designed to simplify medication management and provide a foc
 </p>
 
 </td>
-</tr>
 
 </table>
 
