@@ -271,6 +271,25 @@ Educational platform for Class 10 students featuring chapter-wise study resource
 </td>
 </tr>
 
+<tr>
+<a href="https://medisafe-platform.vercel.app/">
+  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MediSafe project preview">
+</a>
+
+### MediSafe
+
+Healthcare platform designed to simplify medication management and provide a focused digital experience for managing health-related information.
+
+**Stack:** Full-stack web · Healthcare · Database · Deployment
+
+<p>
+  <a href="https://medisafe-platform.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/Medisafe">Source</a>
+</p>
+
+</td>
+</tr>
+
 </table>
 
 ---
