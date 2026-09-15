@@ -117,6 +117,14 @@ Production web application focused on business workflow and operational manageme
 
 ---
 
+## 👁️ Argus
+
+Market analytics and data-focused web application designed around financial data, analytics, visualization, and monitoring workflows.
+
+**Tech:** Python • Data Analytics • APIs • Pandas • Matplotlib
+
+<a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/">🌐 Live Demo</a>
+
 ## 🌐 Sub-Verse
 
 A modern web experience built around interactive product-style presentation.
