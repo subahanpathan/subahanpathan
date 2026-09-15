@@ -131,125 +131,8 @@ My approach is simple:
 ---
 
 ## 04 · FEATURED PRODUCTION WORK
-
+```html
 <table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://erp-topaz-three.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP project preview">
-</a>
-
-### ERP
-
-Production web application focused on business workflow and operational management.
-
-**Stack:** Full-stack web · Database · Deployment
-
-<p>
-  <a href="https://erp-topaz-three.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/ERP">Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://sub-verse-six.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse project preview">
-</a>
-
-### Sub-Verse
-
-A modern web experience built around interactive product-style presentation.
-
-**Stack:** React · Next.js · TypeScript · Deployment
-
-<p>
-  <a href="https://sub-verse-six.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/-SubVerse">Source</a>
-</p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://meter-flow-mu.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow project preview">
-</a>
-
-### Meter Flow
-
-Web application for managing meter-oriented operational workflows and data.
-
-**Stack:** Full-stack web · Data · Deployment
-
-<p>
-  <a href="https://meter-flow-mu.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/meter-flow">Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://bug-tracker-omega-three.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker project preview">
-</a>
-
-### Bug Tracker
-
-Application for organizing software issues, tracking work, and improving development visibility.
-
-**Stack:** React · Node.js · Database · Deployment
-
-<p>
-  <a href="https://bug-tracker-omega-three.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/Bug-Tracker">Source</a>
-</p>
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://nexus-ai-inky-iota.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI project preview">
-</a>
-
-### Nexus AI
-
-AI-focused application exploring practical interfaces and intelligent application workflows.
-
-**Stack:** AI · Full-stack web · API integration
-
-<p>
-  <a href="https://nexus-ai-inky-iota.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/nexus-ai">Source</a>
-</p>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://signflow-olive-three.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview">
-</a>
-
-### SignFlow
-
-Web application centered around digital workflow and document-signing experiences.
-
-**Stack:** Full-stack web · Workflow · Deployment
-
-<p>
-  <a href="https://signflow-olive-three.vercel.app/">Live Preview</a> ·
-  <a href="https://github.com/subahanpathan/signflow">Source</a>
-</p>
-
-</td>
-</tr>
-
 <tr>
 <td colspan="2" valign="top">
 
@@ -280,8 +163,149 @@ ARGUS transforms system activity into actionable security intelligence — helpi
 <tr>
 <td width="50%" valign="top">
 
+<a href="https://erp-topaz-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png"
+    alt="ERP project preview"
+  >
+</a>
+
+### ERP
+
+Production web application focused on business workflow and operational management.
+
+**Stack:** Full-stack web · Database · Deployment
+
+<p>
+  <a href="https://erp-topaz-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/ERP">Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://sub-verse-six.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png"
+    alt="Sub-Verse project preview"
+  >
+</a>
+
+### Sub-Verse
+
+A modern web experience built around interactive product-style presentation.
+
+**Stack:** React · Next.js · TypeScript · Deployment
+
+<p>
+  <a href="https://sub-verse-six.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/-SubVerse">Source</a>
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://meter-flow-mu.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png"
+    alt="Meter Flow project preview"
+  >
+</a>
+
+### Meter Flow
+
+Web application for managing meter-oriented operational workflows and data.
+
+**Stack:** Full-stack web · Data · Deployment
+
+<p>
+  <a href="https://meter-flow-mu.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/meter-flow">Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://bug-tracker-omega-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png"
+    alt="Bug Tracker project preview"
+  >
+</a>
+
+### Bug Tracker
+
+Application for organizing software issues, tracking work, and improving development visibility.
+
+**Stack:** React · Node.js · Database · Deployment
+
+<p>
+  <a href="https://bug-tracker-omega-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/Bug-Tracker">Source</a>
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://nexus-ai-inky-iota.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png"
+    alt="Nexus AI project preview"
+  >
+</a>
+
+### Nexus AI
+
+AI-focused application exploring practical interfaces and intelligent application workflows.
+
+**Stack:** AI · Full-stack web · API integration
+
+<p>
+  <a href="https://nexus-ai-inky-iota.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/nexus-ai">Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://signflow-olive-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png"
+    alt="SignFlow project preview"
+  >
+</a>
+
+### SignFlow
+
+Web application centered around digital workflow and document-signing experiences.
+
+**Stack:** Full-stack web · Workflow · Deployment
+
+<p>
+  <a href="https://signflow-olive-three.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/signflow">Source</a>
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
 <a href="https://subahanpathan.github.io/One-For-All/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png"
+    alt="One-For-All project preview"
+  >
 </a>
 
 ### One-For-All
@@ -296,12 +320,14 @@ Educational platform for Class 10 students featuring chapter-wise study resource
 </p>
 
 </td>
-</tr>
 
 <td width="50%" valign="top">
 
 <a href="https://medisafe-platform.vercel.app/">
-  <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MediSafe project preview">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png"
+    alt="MediSafe project preview"
+  >
 </a>
 
 ### MediSafe
@@ -316,10 +342,13 @@ Healthcare platform designed to simplify medication management and provide a foc
 </p>
 
 </td>
+</tr>
 
 </table>
 
 ---
+```
+
 
 ## 05 · ENGINEERING METRICS
 
