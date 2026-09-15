@@ -251,6 +251,33 @@ Web application centered around digital workflow and document-signing experience
 </tr>
 
 <tr>
+<td colspan="2" valign="top">
+
+<a href="https://argus-lime-ten.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/ARGUS/main/assets/argus-preview.png"
+    alt="ARGUS Security Intelligence project preview"
+    width="100%"
+  >
+</a>
+
+### ARGUS · Security Intelligence Platform
+
+Real-time security intelligence platform built around endpoint telemetry, behavioral detection, threat correlation, investigation, and explainable security signals.
+
+ARGUS transforms system activity into actionable security intelligence — helping analysts **detect, investigate, assess exposure, contain threats, remediate incidents, and understand potential security impact.**
+
+**Stack:** React · TypeScript · Node.js · Express · PostgreSQL · Drizzle ORM · Real-time Telemetry · Threat Detection · Security Analytics
+
+<p>
+  <a href="https://argus-lime-ten.vercel.app/">Live Preview</a> ·
+  <a href="https://github.com/subahanpathan/ARGUS">Source</a>
+</p>
+
+</td>
+</tr>
+
+<tr>
 <td width="50%" valign="top">
 
 <a href="https://subahanpathan.github.io/One-For-All/">
