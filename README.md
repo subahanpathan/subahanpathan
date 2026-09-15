@@ -131,7 +131,6 @@ My approach is simple:
 ---
 
 ## 04 · FEATURED PRODUCTION WORK
-```html
 <table>
 <tr>
 <td colspan="2" valign="top">
