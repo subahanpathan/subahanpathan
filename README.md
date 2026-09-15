@@ -2,21 +2,32 @@
 
 # Hi, I'm Subahan Pathan 👋
 
-### Full-Stack Developer • DevOps • Cloud • AI Applications
+<img
+  src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=25&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=850&lines=FULL-STACK+DEVELOPER;DEVOPS+%C2%B7+CLOUD+ENGINEER;AUTOMATION+%C2%B7+CI%2FCD;AI+APPLICATION+BUILDER"
+  alt="Typing animation"
+/>
 
-Building scalable applications, reliable infrastructure, and automated delivery systems.
+<p>
+  Building web applications, backend systems, cloud infrastructure,
+  automation workflows, and practical software products.
+</p>
 
 <p>
   <a href="https://github.com/subahanpathan">
-    <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
   <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
   <a href="https://github.com/subahanpathan?tab=repositories">
-    <img src="https://img.shields.io/badge/Projects-View%20Projects-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Projects">
+    <img src="https://img.shields.io/badge/Projects-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Projects">
   </a>
 </p>
+
+<img
+  src="https://komarev.com/ghpvc/?username=subahanpathan&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS"
+  alt="Profile views"
+/>
 
 </div>
 
@@ -24,38 +35,60 @@ Building scalable applications, reliable infrastructure, and automated delivery 
 
 ## 👨‍💻 About Me
 
-I'm a software developer focused on building practical, production-oriented applications across the full software lifecycle.
+I'm a **Full-Stack Developer** interested in building complete software systems — from frontend interfaces and backend APIs to databases, deployment, cloud infrastructure, and automation.
 
-My work spans **full-stack development, backend systems, databases, cloud infrastructure, DevOps, CI/CD, automation, and AI-enabled applications**.
+I enjoy turning ideas into working products and continuously improving the way applications are built, deployed, and maintained.
 
-I enjoy turning ideas into working products, improving development workflows, and learning how software moves from development to reliable production systems.
+### What I work with
 
-> **Build clean. Automate repeatable work. Ship reliably. Improve continuously.**
+- 💻 Full-Stack Web Development
+- ⚙️ Backend & API Development
+- ☁️ Cloud & Infrastructure
+- 🔄 CI/CD & Automation
+- 🤖 AI-enabled Applications
+- 🗄️ Databases & Data Systems
+- 🐧 Linux & Server Environments
+
+> **Build clean. Automate repeatable work. Ship reliably.**
 
 ---
 
-## 🧩 Engineering Focus
+# 🧠 Engineering Focus
 
-### 💻 Full-Stack Development
+<table>
+<tr>
 
-- Responsive web applications
-- React / Next.js development
-- TypeScript / JavaScript
-- Node.js backend development
-- REST API integration
-- Authentication and application workflows
+<td width="25%" valign="top">
 
-### ⚙️ Backend & Data
+### 💻 Full-Stack
 
+- React
+- Next.js
+- TypeScript
+- JavaScript
+- Node.js
+- Python
 - REST APIs
-- Database design
+
+</td>
+
+<td width="25%" valign="top">
+
+### ⚙️ Backend
+
+- API Development
+- Authentication
+- Database Design
 - PostgreSQL
 - MongoDB
 - MySQL
 - Redis
-- Backend service integration
 
-### ☁️ DevOps & Cloud
+</td>
+
+<td width="25%" valign="top">
+
+### ☁️ DevOps
 
 - Docker
 - Kubernetes
@@ -63,175 +96,335 @@ I enjoy turning ideas into working products, improving development workflows, an
 - Linux
 - Nginx
 - Terraform
-- Production deployment
+- Deployment
 
-### 🔄 Automation & CI/CD
+</td>
 
-- Git & GitHub
+<td width="25%" valign="top">
+
+### 🔄 Automation
+
 - GitHub Actions
 - Jenkins
-- CI/CD pipelines
-- Deployment automation
-- Bash / Python scripting
+- CI/CD
+- Bash
+- Python
+- Git
+- Deployment Automation
+
+</td>
+
+</tr>
+</table>
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Application
+### Languages & Application
 
 <p>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,python,html,css" alt="Application technologies">
+  <img src="https://skillicons.dev/icons?i=ts,js,python,react,nextjs,nodejs,html,css" alt="Languages and application technologies">
 </p>
 
-### Databases & Data
+### Databases
 
 <p>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql" alt="Database technologies">
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis" alt="Database technologies">
 </p>
 
 ### Cloud & Infrastructure
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx" alt="Cloud and infrastructure technologies">
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx" alt="Cloud technologies">
 </p>
 
-### Tools & Delivery
+### Tools & Deployment
 
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode" alt="Development and delivery tools">
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode" alt="Development tools">
 </p>
 
 ---
 
-# 🚀 Selected Projects
+# 🚀 Featured Projects
 
-## 🏢 ERP
+<table>
+<tr>
 
-Production web application focused on business workflow and operational management.
+<td width="50%" valign="top">
 
-**Tech:** Full-stack Web • Database • Deployment
+<a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/argus.png"
+    alt="ARGUS project preview"
+    width="100%"
+  >
+</a>
 
-<a href="https://erp-topaz-three.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/ERP">💻 GitHub</a>
+### 👁️ ARGUS
 
----
+Security-focused project exploring monitoring, process activity, and threat-detection workflows.
 
-## 👁️ Argus
+**Focus:** Security · Monitoring · Threat Detection
 
-Market analytics and data-focused web application designed around financial data, analytics, visualization, and monitoring workflows.
+<p>
+  <a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/ARGUS">💻 Source</a>
+</p>
 
-**Tech:** Python • Data Analytics • APIs • Pandas • Matplotlib
+</td>
 
-<a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/">🌐 Live Demo</a>
+<td width="50%" valign="top">
 
-## 🌐 Sub-Verse
+<a href="https://medisafe-platform.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png"
+    alt="MediSafe project preview"
+    width="100%"
+  >
+</a>
 
-A modern web experience built around interactive product-style presentation.
+### 🩺 MediSafe
 
-**Tech:** React • Next.js • TypeScript • Deployment
+Healthcare platform designed around medication management and a focused digital health experience.
 
-<a href="https://sub-verse-six.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/-SubVerse">💻 GitHub</a>
+**Focus:** Healthcare · Full-Stack · Database · Deployment
 
----
+<p>
+  <a href="https://medisafe-platform.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/Medisafe">💻 Source</a>
+</p>
 
-## ⚡ Meter Flow
+</td>
 
-Web application for managing meter-oriented operational workflows and data.
+</tr>
 
-**Tech:** Full-stack Web • Data • Deployment
+<tr>
 
-<a href="https://meter-flow-mu.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/meter-flow">💻 GitHub</a>
+<td width="50%" valign="top">
 
----
+<a href="https://subahanpathan.github.io/One-For-All/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png"
+    alt="One-For-All project preview"
+    width="100%"
+  >
+</a>
 
-## 🐞 Bug Tracker
+### 📚 One-For-All
 
-Application for organizing software issues, tracking work, and improving development visibility.
+Educational platform for Class 10 students featuring chapter-wise resources, interactive PYQs, and learning materials across multiple subjects.
 
-**Tech:** React • Node.js • Database • Deployment
+**Focus:** Education · Web Application · Interactive Learning
 
-<a href="https://bug-tracker-omega-three.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/Bug-Tracker">💻 GitHub</a>
+<p>
+  <a href="https://subahanpathan.github.io/One-For-All/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/One-For-All">💻 Source</a>
+</p>
 
----
+</td>
 
-## 🤖 Nexus AI
+<td width="50%" valign="top">
 
-AI-focused application exploring practical interfaces and intelligent application workflows.
+<a href="https://signflow-olive-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png"
+    alt="SignFlow project preview"
+    width="100%"
+  >
+</a>
 
-**Tech:** AI • Full-stack Web • API Integration
-
-<a href="https://nexus-ai-inky-iota.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/nexus-ai">💻 GitHub</a>
-
----
-
-## ✍️ SignFlow
+### ✍️ SignFlow
 
 Web application centered around digital workflow and document-signing experiences.
 
-**Tech:** Full-stack Web • Workflow • Deployment
+**Focus:** Full-Stack · Workflow · Deployment
 
-<a href="https://signflow-olive-three.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/signflow">💻 GitHub</a>
+<p>
+  <a href="https://signflow-olive-three.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/signflow">💻 Source</a>
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<a href="https://nexus-ai-inky-iota.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png"
+    alt="Nexus AI project preview"
+    width="100%"
+  >
+</a>
+
+### 🤖 Nexus AI
+
+AI-focused application exploring practical interfaces and intelligent application workflows.
+
+**Focus:** AI · Full-Stack · API Integration
+
+<p>
+  <a href="https://nexus-ai-inky-iota.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/nexus-ai">💻 Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://bug-tracker-omega-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png"
+    alt="Bug Tracker project preview"
+    width="100%"
+  >
+</a>
+
+### 🐞 Bug Tracker
+
+Application for organizing software issues, tracking work, and improving development visibility.
+
+**Focus:** React · Node.js · Database · Deployment
+
+<p>
+  <a href="https://bug-tracker-omega-three.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/Bug-Tracker">💻 Source</a>
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<a href="https://erp-topaz-three.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png"
+    alt="ERP project preview"
+    width="100%"
+  >
+</a>
+
+### 🏢 ERP
+
+Production web application focused on business workflow and operational management.
+
+**Focus:** Full-Stack · Database · Deployment
+
+<p>
+  <a href="https://erp-topaz-three.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/ERP">💻 Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="https://sub-verse-six.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png"
+    alt="Sub-Verse project preview"
+    width="100%"
+  >
+</a>
+
+### 🌐 Sub-Verse
+
+Modern web experience built around interactive product-style presentation.
+
+**Focus:** React · Next.js · TypeScript · Deployment
+
+<p>
+  <a href="https://sub-verse-six.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/-SubVerse">💻 Source</a>
+</p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+<a href="https://meter-flow-mu.vercel.app/">
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png"
+    alt="Meter Flow project preview"
+    width="100%"
+  >
+</a>
+
+### ⚡ Meter Flow
+
+Web application for managing meter-oriented operational workflows and data.
+
+**Focus:** Full-Stack · Data · Deployment
+
+<p>
+  <a href="https://meter-flow-mu.vercel.app/">🌐 Live Demo</a>
+  ·
+  <a href="https://github.com/subahanpathan/meter-flow">💻 Source</a>
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🔐 More Projects
+
+Explore additional experiments, learning projects, and repositories on my GitHub.
+
+<p>
+  <a href="https://github.com/subahanpathan?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore%20All%20Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore repositories">
+  </a>
+</p>
+
+</td>
+
+</tr>
+</table>
 
 ---
 
-## 📚 One-For-All
-
-Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects.
-
-**Tech:** Education Platform • Web Application • Interactive Learning
-
-<a href="https://subahanpathan.github.io/One-For-All/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/One-For-All">💻 GitHub</a>
-
----
-
-## 🩺 MediSafe
-
-Healthcare platform designed to simplify medication management and provide a focused digital experience for managing health-related information.
-
-**Tech:** Full-stack Web • Healthcare • Database • Deployment
-
-<a href="https://medisafe-platform.vercel.app/">🌐 Live Demo</a> •
-<a href="https://github.com/subahanpathan/Medisafe">💻 GitHub</a>
-
----
-
-## 🧠 Problem Solving & Learning
-
-I focus on understanding how systems work and improving my ability to build clean, maintainable solutions.
-
-My learning and development focus includes:
-
-- Full-stack application development
-- Backend architecture
-- Database design
-- DevOps and cloud infrastructure
-- CI/CD automation
-- API development
-- AI-enabled applications
-- Problem solving and continuous learning
-
----
-
-## 📊 GitHub Engineering Metrics
+# 📊 GitHub Activity
 
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
-    alt="GitHub Engineering Metrics"
+    alt="GitHub statistics"
     width="100%"
   />
 </p>
 
+<p align="center">
+
+<img
+  src="https://github-readme-streak-stats.herokuapp.com/?user=subahanpathan&theme=github-dark-blue&hide_border=true"
+  alt="GitHub streak"
+/>
+
+</p>
+
 ---
 
-## 🐍 Contribution Activity
+# 🐍 Contribution Activity
 
 <p align="center">
   <picture>
@@ -243,51 +436,57 @@ My learning and development focus includes:
       srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg">
     <img
       src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
-      alt="GitHub contribution snake animation">
+      alt="GitHub contribution snake animation"
+    >
   </picture>
 </p>
 
 ---
 
-## 📚 Project Index
+# 🧠 Problem Solving & Learning
 
-| Project | Description | Links |
+I'm continuously improving my engineering skills through:
+
+- Building real-world applications
+- Learning system design
+- Developing backend services
+- Exploring cloud infrastructure
+- Automating development workflows
+- Practicing problem solving
+- Experimenting with AI applications
+- Improving deployment and production workflows
+
+---
+
+# 📌 Project Index
+
+| Project | Category | Live |
 |---|---|---|
-| **ERP** | Business workflow and operational management application | [GitHub](https://github.com/subahanpathan/ERP) · [Live](https://erp-topaz-three.vercel.app/) |
-| **Sub-Verse** | Interactive product-style web experience | [GitHub](https://github.com/subahanpathan/-SubVerse) · [Live](https://sub-verse-six.vercel.app/) |
-| **Meter Flow** | Meter-oriented workflow and data application | [GitHub](https://github.com/subahanpathan/meter-flow) · [Live](https://meter-flow-mu.vercel.app/) |
-| **Bug Tracker** | Software issue and work tracking application | [GitHub](https://github.com/subahanpathan/Bug-Tracker) · [Live](https://bug-tracker-omega-three.vercel.app/) |
-| **Nexus AI** | AI-focused application and intelligent workflows | [GitHub](https://github.com/subahanpathan/nexus-ai) · [Live](https://nexus-ai-inky-iota.vercel.app/) |
-| **SignFlow** | Digital workflow and document-signing application | [GitHub](https://github.com/subahanpathan/signflow) · [Live](https://signflow-olive-three.vercel.app/) |
-| **One-For-All** | Class 10 educational resources and interactive PYQs | [GitHub](https://github.com/subahanpathan/One-For-All) · [Live](https://subahanpathan.github.io/One-For-All/) |
-| **MediSafe** | Healthcare and medication-focused web platform | [GitHub](https://github.com/subahanpathan/Medisafe) · [Live](https://medisafe-platform.vercel.app/) |
+| 👁️ **ARGUS** | Security / Monitoring | [View](https://argus-7je8x6nio-subahanpathans-projects.vercel.app/) |
+| 🩺 **MediSafe** | Healthcare / Full-Stack | [View](https://medisafe-platform.vercel.app/) |
+| 📚 **One-For-All** | Education / Web | [View](https://subahanpathan.github.io/One-For-All/) |
+| ✍️ **SignFlow** | Workflow / Full-Stack | [View](https://signflow-olive-three.vercel.app/) |
+| 🤖 **Nexus AI** | AI / Full-Stack | [View](https://nexus-ai-inky-iota.vercel.app/) |
+| 🐞 **Bug Tracker** | Development Tools | [View](https://bug-tracker-omega-three.vercel.app/) |
+| 🏢 **ERP** | Business / Full-Stack | [View](https://erp-topaz-three.vercel.app/) |
+| 🌐 **Sub-Verse** | Frontend / Product UI | [View](https://sub-verse-six.vercel.app/) |
+| ⚡ **Meter Flow** | Data / Full-Stack | [View](https://meter-flow-mu.vercel.app/) |
 
 ---
 
-## 🎯 Current Direction
+# 🎯 Current Direction
 
-I'm currently focused on becoming stronger across:
+### Building stronger skills across
 
-**Full-Stack Development · DevOps · Cloud Infrastructure · CI/CD · Automation · AI Applications**
-
----
-
-## 🤝 Let's Connect
-
-Building software, learning new technologies, solving problems, and turning ideas into real applications.
-
-<p align="center">
-
-<a href="https://github.com/subahanpathan">
-  <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-
-<a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
-</p>
-
-<p align="center">
-  <sub>Designed and maintained by Subahan Pathan.</sub>
-</p>
+```text
+Full-Stack Development
+        ↓
+Backend Engineering
+        ↓
+Cloud & DevOps
+        ↓
+CI/CD & Automation
+        ↓
+AI Applications
+        ↓
+Production Engineering
