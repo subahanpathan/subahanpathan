@@ -1,5 +1,6 @@
 <!-- ════════════════ HEADER ════════════════ -->
 <div align="center">
+	
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A8A,100:58A6FF&height=210&section=header&text=SUBAHAN%20PATHAN&fontColor=FFFFFF&fontSize=52&fontAlignY=36&desc=Full-Stack%20%C2%B7%20DevOps%20%C2%B7%20Cloud%20%C2%B7%20Automation&descAlignY=58&descSize=16&animation=fadeIn" width="100%" alt="Subahan Pathan — Full-Stack, DevOps, Cloud, Automation"/>
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2600&pause=800&color=58A6FF&center=true&vCenter=true&width=820&lines=FULL-STACK+ENGINEER;DEVOPS+%C2%B7+CLOUD+ENGINEER;AUTOMATION+%C2%B7+CI%2FCD+PIPELINES;AI+APPLICATION+BUILDER" alt="Roles"/>
 <br/>
