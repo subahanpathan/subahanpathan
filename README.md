@@ -78,3 +78,25 @@ OBSERVE
  ↓
 IMPROVE
  ↺
+
+<!-- PROJECTS_START -->
+## 11 · PROJECT INDEX
+
+_Automatically refreshed from GitHub repository activity._
+
+| Repository | Description | Stars | Updated |
+|---|---|---:|---:|
+| [quote-scraper](https://github.com/subahanpathan/quote-scraper) | A beautiful desktop quote scraping app | 0 | 1y ago |
+| [One-For-All](https://github.com/subahanpathan/One-For-All) | No repository description provided. | 1 | 6mo ago |
+| [Voice](https://github.com/subahanpathan/Voice) | No repository description provided. | 0 | 1h ago |
+| [Election](https://github.com/subahanpathan/Election) | No repository description provided. | 0 | 1h ago |
+| [Leetcode](https://github.com/subahanpathan/Leetcode) | No repository description provided. | 0 | 1h ago |
+| [ARGUS](https://github.com/subahanpathan/ARGUS) | No repository description provided. | 0 | 17h ago |
+| [Medisafe](https://github.com/subahanpathan/Medisafe) | No repository description provided. | 0 | 1d ago |
+| [DriveLens](https://github.com/subahanpathan/DriveLens) | No repository description provided. | 0 | 2d ago |
+| [-SubVerse](https://github.com/subahanpathan/-SubVerse) | No repository description provided. | 0 | 1mo ago |
+| [Bug-Tracker](https://github.com/subahanpathan/Bug-Tracker) | No repository description provided. | 0 | 1mo ago |
+
+_Featured production projects are maintained separately above._
+
+<!-- PROJECTS_END -->
