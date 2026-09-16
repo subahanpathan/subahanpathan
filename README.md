@@ -35,11 +35,11 @@
 
 ## 👨‍💻 About Me
 
-I'm a **Full-Stack Developer** interested in building complete software systems — from frontend interfaces and backend APIs to databases, deployment, cloud infrastructure, and automation.
+I'm a **Full-Stack Developer** focused on building complete software systems — from frontend interfaces and backend APIs to databases, deployment, cloud infrastructure, and automation.
 
-I enjoy turning ideas into working products and continuously improving the way applications are built, deployed, and maintained.
+I enjoy turning ideas into working products and continuously improving the way applications are **built, deployed, monitored, and maintained**.
 
-### What I work with
+### What I work on
 
 - 💻 Full-Stack Web Development
 - ⚙️ Backend & API Development
@@ -48,6 +48,7 @@ I enjoy turning ideas into working products and continuously improving the way a
 - 🤖 AI-enabled Applications
 - 🗄️ Databases & Data Systems
 - 🐧 Linux & Server Environments
+- 🔐 Security & Monitoring
 
 > **Build clean. Automate repeatable work. Ship reliably.**
 
@@ -136,13 +137,13 @@ I enjoy turning ideas into working products and continuously improving the way a
 ### Cloud & Infrastructure
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx" alt="Cloud technologies">
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx" alt="Cloud and infrastructure technologies">
 </p>
 
 ### Tools & Deployment
 
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode" alt="Development tools">
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode" alt="Development tools and deployment technologies">
 </p>
 
 ---
@@ -216,7 +217,7 @@ Healthcare platform designed around medication management and a focused digital 
 
 ### 📚 One-For-All
 
-Educational platform for Class 10 students featuring chapter-wise resources, interactive PYQs, and learning materials across multiple subjects.
+Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects.
 
 **Focus:** Education · Web Application · Interactive Learning
 
@@ -386,15 +387,18 @@ Web application for managing meter-oriented operational workflows and data.
 
 <td width="50%" valign="top">
 
-### 🔐 More Projects
+### 📦 More on GitHub
 
-Explore additional experiments, learning projects, and repositories on my GitHub.
+Explore additional experiments, learning projects, utilities, and repositories.
 
-<p>
-  <a href="https://github.com/subahanpathan?tab=repositories">
-    <img src="https://img.shields.io/badge/Explore%20All%20Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explore repositories">
-  </a>
-</p>
+<br>
+
+<a href="https://github.com/subahanpathan?tab=repositories">
+  <img
+    src="https://img.shields.io/badge/EXPLORE_ALL_REPOSITORIES-181717?style=for-the-badge&logo=github&logoColor=white"
+    alt="Explore all repositories"
+  >
+</a>
 
 </td>
 
@@ -406,11 +410,13 @@ Explore additional experiments, learning projects, and repositories on my GitHub
 # 📊 GitHub Activity
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
-    alt="GitHub statistics"
-    width="100%"
-  />
+
+<img
+  src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg"
+  alt="GitHub statistics"
+  width="100%"
+/>
+
 </p>
 
 <p align="center">
@@ -427,63 +433,42 @@ Explore additional experiments, learning projects, and repositories on my GitHub
 # 🐍 Contribution Activity
 
 <p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg">
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg">
-    <img
-      src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
-      alt="GitHub contribution snake animation"
-    >
-  </picture>
+
+<picture>
+
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg"
+  >
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
+  >
+
+  <img
+    src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
+    alt="GitHub contribution snake animation"
+  >
+
+</picture>
+
 </p>
 
 ---
 
-# 🧠 Problem Solving & Learning
+# 🧩 Problem Solving & Learning
 
-I'm continuously improving my engineering skills through:
-
-- Building real-world applications
-- Learning system design
-- Developing backend services
-- Exploring cloud infrastructure
-- Automating development workflows
-- Practicing problem solving
-- Experimenting with AI applications
-- Improving deployment and production workflows
-
----
-
-# 📌 Project Index
-
-| Project | Category | Live |
-|---|---|---|
-| 👁️ **ARGUS** | Security / Monitoring | [View](https://argus-7je8x6nio-subahanpathans-projects.vercel.app/) |
-| 🩺 **MediSafe** | Healthcare / Full-Stack | [View](https://medisafe-platform.vercel.app/) |
-| 📚 **One-For-All** | Education / Web | [View](https://subahanpathan.github.io/One-For-All/) |
-| ✍️ **SignFlow** | Workflow / Full-Stack | [View](https://signflow-olive-three.vercel.app/) |
-| 🤖 **Nexus AI** | AI / Full-Stack | [View](https://nexus-ai-inky-iota.vercel.app/) |
-| 🐞 **Bug Tracker** | Development Tools | [View](https://bug-tracker-omega-three.vercel.app/) |
-| 🏢 **ERP** | Business / Full-Stack | [View](https://erp-topaz-three.vercel.app/) |
-| 🌐 **Sub-Verse** | Frontend / Product UI | [View](https://sub-verse-six.vercel.app/) |
-| ⚡ **Meter Flow** | Data / Full-Stack | [View](https://meter-flow-mu.vercel.app/) |
-
----
-
-# 🎯 Current Direction
-
-### Building stronger skills across
+I continuously improve my engineering skills by building, experimenting, and solving practical problems.
 
 ```text
-Full-Stack Development
+Real-world Projects
         ↓
 Backend Engineering
         ↓
-Cloud & DevOps
+System Design
+        ↓
+Cloud Infrastructure
         ↓
 CI/CD & Automation
         ↓
