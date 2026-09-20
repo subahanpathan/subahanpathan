@@ -4,71 +4,66 @@
      hosted SVG services, or monospace system diagrams.
      ═══════════════════════════════════════════════════════════════════ -->
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:05070D,25:0B1120,55:1E3A8A,80:4C1D95,100:0EA5E9&section=header&text=SUBAHAN%20PATHAN&fontSize=54&fontColor=F8FAFC&fontAlign=50&fontAlignY=34&desc=SOFTWARE%20ENGINEER%20%E2%80%94%20FULL-STACK%20%C2%B7%20CLOUD%20%C2%B7%20DEVOPS%20%C2%B7%20AI%20%C2%B7%20IoT&descSize=16&descAlign=50&descAlignY=55&animation=fadeIn&stroke=58A6FF&strokeWidth=1" alt="Subahan Pathan — Software Engineer" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:05070D,25:0B1120,55:1E3A8A,80:4C1D95,100:0EA5E9&section=header&text=SUBAHAN%20PATHAN&fontSize=52&fontColor=F8FAFC&fontAlign=50&fontAlignY=36&desc=SOFTWARE%20ENGINEER%20%E2%80%94%20FULL-STACK%20%C2%B7%20CLOUD%20%C2%B7%20DEVOPS%20%C2%B7%20AI%20%C2%B7%20IoT&descSize=16&descAlign=50&descAlignY=56&animation=fadeIn&stroke=58A6FF&strokeWidth=1" alt="Subahan Pathan — Software Engineer" />
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=SYSTEMS+IN+MOTION;I+build+interconnected+software+systems;Interfaces+%E2%86%92+APIs+%E2%86%92+Infrastructure+%E2%86%92+Production" alt="Systems in motion" />
+<sub>SOFTWARE ENGINEER — FULL-STACK · CLOUD · DEVOPS · AI · IoT</sub>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=SYSTEMS+IN+MOTION;Interfaces+%E2%86%92+APIs+%E2%86%92+Infrastructure+%E2%86%92+Production;I+build+interconnected+software+systems" alt="Systems in motion" />
 
 </div>
 
 ```text
-                              ◉  AI
-                              │
-                    ╲         │         ╱
-                      ╲       │       ╱
-          IoT  ◉ ───────────  ◆  ─────────── ◉  CLOUD
-                      ╱       │       ╲
-                    ╱         │         ╲
-                              │
-                 ◉ ───────────┴─────────── ◉
-               API                      DEPLOY
-                              │
-                              ◉
-                           DATABASE
-
-        ─────────────────────────────────────────────
-              I N T E R C O N N E C T E D   S Y S T E M S
-        ─────────────────────────────────────────────
+                           ◉ AI
+                           │
+        IoT   ◉────────────┼────────────◉ CLOUD
+        API   ◉────────────┼────────────◉ AUTOMATION
+        DATA  ◉────────────┤────────────◉ SECURITY
+        DEVOPS◉────────────┤────────────◉ DATABASE
 ```
+
+<sub align="center">AI · IoT · CLOUD · SECURITY · DATA · AUTOMATION · API · DATABASE · DEVOPS — one interconnected system core</sub>
 
 <div align="center">
 
 <a href="#01--engineering-core"><img src="https://img.shields.io/badge/01-CORE-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Core" /></a>
+<a href="#02--engineering-profile"><img src="https://img.shields.io/badge/02-PROFILE-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Profile" /></a>
 <a href="#03--technology-constellation"><img src="https://img.shields.io/badge/03-STACK-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Stack" /></a>
 <a href="#04--flagship-systems"><img src="https://img.shields.io/badge/04-FLAGSHIP-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Flagship systems" /></a>
 <a href="#05--project-gallery"><img src="https://img.shields.io/badge/05-PROJECTS-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Projects" /></a>
+<a href="#06--system-architecture"><img src="https://img.shields.io/badge/06-ARCHITECTURE-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Architecture" /></a>
+<a href="#07--delivery-pipeline"><img src="https://img.shields.io/badge/07-PIPELINE-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Pipeline" /></a>
 <a href="#10--signals"><img src="https://img.shields.io/badge/10-SIGNALS-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Signals" /></a>
 <a href="#lets-build-something"><img src="https://img.shields.io/badge/CONNECT-0B1120?style=flat-square&labelColor=05070D&color=0E7490" alt="Connect" /></a>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:22D3EE,60:58A6FF,100:05070D&section=header" alt="" />
-
 </div>
+
+---
 
 ## 01 · ENGINEERING CORE
 
 The shape of what I build — data moving through layers, not a list of tools.
 
 ```text
-                     ┌──────────────  AI  ──────────────┐
-                     │                                  │
-                     ▼                                  │
-      FRONTEND ─────────────► API ─────────────► BACKEND ┘
-          │                    │                    │
-          │                    ▼                    ▼
-          │                 DATABASE              CACHE
-          │
-          ▼
-    CLOUD / DEVOPS
-          │
-          ▼
-    CI/CD PIPELINE
-          │
-          ▼
-      PRODUCTION
+                       ◉ APPLICATION
+                       │
+                       ▼
+        API     ◉──────◆──────◉ AI
+                │      │      │
+        BACKEND ◉──────┼──────◉ CACHE
+                │      │      │
+        DATABASE◉──────┤──────◉ CLOUD
+                │      │      │
+        DEVOPS  ◉──────┤──────◉ CI/CD
+                       │
+                       ▼
+                       ◉ PRODUCTION
 ```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+<sub align="center">APPLICATION · API · BACKEND · DATABASE · CACHE · AI · CLOUD · DEVOPS · CI/CD · PRODUCTION</sub>
+
+---
 
 ## 02 · ENGINEERING PROFILE
 
@@ -77,12 +72,13 @@ The shape of what I build — data moving through layers, not a list of tools.
 > and operational systems.
 
 ```text
-        ┌──► DISCOVER ──► DESIGN ──► BUILD ──► TEST ──┐
-        │                                             │
-     IMPROVE                                      AUTOMATE
-        │                                             │
-        └──── OBSERVE ◄──── DEPLOY ◄──────────────────┘
+    DISCOVER ──► DESIGN ──► BUILD ──► TEST
+       ▲                               │
+       │                               ▼
+    IMPROVE ◄── OBSERVE ◄── DEPLOY ◄── AUTOMATE
 ```
+
+<sub align="center">DISCOVER → DESIGN → BUILD → TEST → AUTOMATE → DEPLOY → OBSERVE → IMPROVE</sub>
 
 <table>
 <tr>
@@ -103,27 +99,9 @@ REST APIs, authentication, data modeling, containers, orchestration, infrastruct
 </tr>
 </table>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+---
 
 ## 03 · TECHNOLOGY CONSTELLATION
-
-```text
-                             CLOUD
-                               │
-                 ┌─────────────┼─────────────┐
-                 │             │             │
-                AWS         DOCKER          K8S
-                 │             │             │
-                 └─────────────┼─────────────┘
-                               │
-                          APPLICATION
-                               │
-                 ┌─────────────┼─────────────┐
-               React        Next.js         Node
-                 └─────────────┼─────────────┘
-                               │
-                              DATA
-```
 
 <table>
 <tr>
@@ -166,7 +144,9 @@ Git · GitHub · GitHub Actions · Jenkins · Vercel
 </tr>
 </table>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:A78BFA,70:58A6FF,100:05070D&section=header" alt="" />
+<sub align="center">Proxy for a broader constellation — the chosen tools sit on top of fundamentals.</sub>
+
+---
 
 ## 04 · FLAGSHIP SYSTEMS
 
@@ -176,45 +156,54 @@ Git · GitHub · GitHub Actions · Jenkins · Vercel
 
 `SECURITY` · `MONITORING` · `THREAT DETECTION`
 
-<a href="ARGUS_LIVE_URL">
-  <img width="92%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/argus.png" alt="ARGUS — security monitoring system" />
-</a>
+<kbd>● ONLINE</kbd> <kbd>● THREAT SCAN</kbd> <kbd>● LIVE TELEMETRY</kbd>
+
+<table align="center">
+<tr>
+<td align="center">
+<a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/argus.png" alt="ARGUS — security monitoring system" /></a>
+</td>
+</tr>
+<tr>
+<td><sub align="center">ARGUS — SECURITY OPERATIONS TERMINAL</sub></td>
+</tr>
+</table>
 
 </div>
 
 A security operations system that watches process activity, analyses behaviour and surfaces threats on a live dashboard.
 
 ```text
-    ┌──────────────────────────────────────────────┐
-    │                   SYSTEM                     │
-    └───────────────────────┬──────────────────────┘
-                            ▼
-                   PROCESS  ACTIVITY
-                            │
-                            ▼
-                  MONITORING  ENGINE
-                            │
-                            ▼
-                  ACTIVITY  ANALYSIS
-                            │
-                            ▼
-                  THREAT  DETECTION
-                            │
-                            ▼
-    ┌──────────────────────────────────────────────┐
-    │             SECURITY  DASHBOARD              │
-    └──────────────────────────────────────────────┘
+            ┌───────────┐
+            │  SYSTEM   │
+            └─────┬─────┘
+                  ▼
+          PROCESS ACTIVITY
+                  │
+                  ▼
+          MONITORING ENGINE
+                  │
+                  ▼
+          ACTIVITY ANALYSIS
+                  │
+                  ▼
+           THREAT DETECTION
+                  │
+                  ▼
+       ┌ SECURITY DASHBOARD ┐
 ```
+
+<sub align="center">SYSTEM → PROCESS ACTIVITY → MONITORING ENGINE → ACTIVITY ANALYSIS → THREAT DETECTION → SECURITY DASHBOARD</sub>
 
 <div align="center">
 
-<a href="ARGUS_LIVE_URL"><img src="https://img.shields.io/badge/LIVE_DEMO_↗-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
+<a href="https://argus-7je8x6nio-subahanpathans-projects.vercel.app/"><img src="https://img.shields.io/badge/LIVE_DEMO-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
 &nbsp;
-<a href="ARGUS_REPO_URL"><img src="https://img.shields.io/badge/SOURCE_CODE_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
+<a href="https://github.com/subahanpathan/ARGUS"><img src="https://img.shields.io/badge/SOURCE_CODE-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+---
 
 ### MEDISAFE
 
@@ -222,47 +211,57 @@ A security operations system that watches process activity, analyses behaviour a
 
 `PHARMACEUTICAL IoT` · `COLD-CHAIN MONITORING`
 
-<a href="MEDISAFE_LIVE_URL">
-  <img width="92%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MEDISAFE — pharmaceutical cold-chain monitoring" />
-</a>
+<kbd>● ONLINE</kbd> <kbd>● COLD CHAIN</kbd> <kbd>● TELEMETRY</kbd>
+
+<table align="center">
+<tr>
+<td align="center">
+<a href="https://medisafe-platform.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MEDISAFE — pharmaceutical cold-chain monitoring" /></a>
+</td>
+</tr>
+<tr>
+<td><sub align="center">MEDISAFE — IOT PHARMACEUTICAL MONITORING PLATFORM</sub></td>
+</tr>
+</table>
 
 </div>
 
 An IoT cold-chain platform: sensors on the crate, telemetry in the cloud, alerts and analytics for pharmaceutical logistics.
 
 ```text
-                         ESP32
-                           │
-            ┌──────────────┼──────────────┐
-            ▼              ▼              ▼
-      TEMPERATURE      HUMIDITY       VIBRATION
-            └──────────────┼──────────────┘
-                           ▼
-                       FIREBASE
-                           │
-                           ▼
-                       MEDISAFE
-                           │
-            ┌──────────────┼──────────────┐
-            ▼              ▼              ▼
-         ALERTS         COOLING       ANALYTICS
-                           │
-                           ▼
-                       LOGISTICS
-                           │
-                           ▼
-              PHARMACEUTICAL  MONITORING
+                  ◉ ESP32
+                  │
+     ┌────────────┼────────────┐
+     ▼            ▼            ▼
+TEMPERATURE   HUMIDITY    VIBRATION
+     └────────────┼────────────┘
+                  ▼
+                  ◉ FIREBASE
+                  │
+                  ◉ MEDISAFE
+                  │
+     ┌────────────┼────────────┐
+     ▼            ▼            ▼
+  ALERTS      COOLING     ANALYTICS
+     └────────────┼────────────┘
+                  ▼
+             LOGISTICS
+                  │
+                  ▼
+        PHARMACEUTICAL MONITORING
 ```
+
+<sub align="center">ESP32 → TEMPERATURE / HUMIDITY / VIBRATION → FIREBASE → MEDISAFE → ALERTS / COOLING / ANALYTICS / LOGISTICS → PHARMACEUTICAL MONITORING</sub>
 
 <div align="center">
 
-<a href="MEDISAFE_LIVE_URL"><img src="https://img.shields.io/badge/LIVE_DEMO_↗-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
+<a href="https://medisafe-platform.vercel.app/"><img src="https://img.shields.io/badge/LIVE_DEMO-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
 &nbsp;
-<a href="MEDISAFE_REPO_URL"><img src="https://img.shields.io/badge/SOURCE_CODE_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
+<a href="https://github.com/subahanpathan/Medisafe"><img src="https://img.shields.io/badge/SOURCE_CODE-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:58A6FF,70:22D3EE,100:05070D&section=header" alt="" />
+---
 
 ## 05 · PROJECT GALLERY
 
@@ -270,100 +269,97 @@ An IoT cold-chain platform: sensors on the crate, telemetry in the cloud, alerts
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://erp-topaz-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP preview" /></a>
+<table align="center">
+<tr><td><a href="https://erp-topaz-three.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP preview" /></a></td></tr>
+</table>
 
-**ERP**
+**ERP** — Business workflow and operational management platform.
 
-Business workflow and operational management platform.
-
-`Full-Stack` · `Database` · `Deployment`
+<kbd>Full-Stack</kbd> <kbd>Database</kbd> <kbd>Deployment</kbd>
 
 <a href="https://erp-topaz-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/ERP">SOURCE ↗</a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://sub-verse-six.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse preview" /></a>
+<table align="center">
+<tr><td><a href="https://sub-verse-six.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse preview" /></a></td></tr>
+</table>
 
-**SUB-VERSE**
+**SUB-VERSE** — Interactive, product-style web experience.
 
-Interactive, product-style web experience.
-
-`React` · `Next.js` · `TypeScript`
+<kbd>React</kbd> <kbd>Next.js</kbd> <kbd>TypeScript</kbd>
 
 <a href="https://sub-verse-six.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/-SubVerse">SOURCE ↗</a>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://meter-flow-mu.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow preview" /></a>
+<table align="center">
+<tr><td><a href="https://meter-flow-mu.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow preview" /></a></td></tr>
+</table>
 
-**METER FLOW**
+**METER FLOW** — Meter-oriented operational workflows and data.
 
-Meter-oriented operational workflows and data.
-
-`Full-Stack` · `Data` · `Deployment`
+<kbd>Full-Stack</kbd> <kbd>Data</kbd> <kbd>Deployment</kbd>
 
 <a href="https://meter-flow-mu.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/meter-flow">SOURCE ↗</a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://bug-tracker-omega-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker preview" /></a>
+<table align="center">
+<tr><td><a href="https://bug-tracker-omega-three.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker preview" /></a></td></tr>
+</table>
 
-**BUG TRACKER**
+**BUG TRACKER** — Issue organisation and development visibility.
 
-Issue organisation and development visibility.
-
-`React` · `Node.js` · `Database`
+<kbd>React</kbd> <kbd>Node.js</kbd> <kbd>Database</kbd>
 
 <a href="https://bug-tracker-omega-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/Bug-Tracker">SOURCE ↗</a>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://nexus-ai-inky-iota.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI preview" /></a>
+<table align="center">
+<tr><td><a href="https://nexus-ai-inky-iota.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI preview" /></a></td></tr>
+</table>
 
-**NEXUS AI**
+**NEXUS AI** — Practical interfaces for intelligent application workflows.
 
-Practical interfaces for intelligent application workflows.
-
-`AI` · `Full-Stack` · `API Integration`
+<kbd>AI</kbd> <kbd>Full-Stack</kbd> <kbd>API Integration</kbd>
 
 <a href="https://nexus-ai-inky-iota.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/nexus-ai">SOURCE ↗</a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://signflow-olive-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow preview" /></a>
+<table align="center">
+<tr><td><a href="https://signflow-olive-three.vercel.app/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow preview" /></a></td></tr>
+</table>
 
-**SIGNFLOW**
+**SIGNFLOW** — Digital workflow and document-signing experiences.
 
-Digital workflow and document-signing experiences.
-
-`Full-Stack` · `Workflow` · `Deployment`
+<kbd>Full-Stack</kbd> <kbd>Workflow</kbd> <kbd>Deployment</kbd>
 
 <a href="https://signflow-olive-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/signflow">SOURCE ↗</a>
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://subahanpathan.github.io/One-For-All/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All preview" /></a>
+<table align="center">
+<tr><td><a href="https://subahanpathan.github.io/One-For-All/"><img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All preview" /></a></td></tr>
+</table>
 
-**ONE-FOR-ALL**
+**ONE-FOR-ALL** — Class 10 study platform — chapter-wise resources and interactive PYQs.
 
-Class 10 study platform — chapter-wise resources and interactive PYQs.
-
-`Education` · `Web Application` · `Interactive`
+<kbd>Education</kbd> <kbd>Web Application</kbd> <kbd>Interactive</kbd>
 
 <a href="https://subahanpathan.github.io/One-For-All/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/One-For-All">SOURCE ↗</a>
 
@@ -374,7 +370,7 @@ Class 10 study platform — chapter-wise resources and interactive PYQs.
 
 <div align="center">
 
-<a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/ALL_REPOSITORIES_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="All repositories" /></a>
+<a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/ALL_REPOSITORIES-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="All repositories" /></a>
 
 <br/>
 
@@ -386,63 +382,64 @@ Class 10 study platform — chapter-wise resources and interactive PYQs.
 </tr>
 </table>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+---
 
 ## 06 · SYSTEM ARCHITECTURE
 
 ```text
-    ╔════════════════════════════════════════════════════╗
-    ║  USER                                              ║
-    ╚════════════════════════╦═══════════════════════════╝
-                             ▼
-                        FRONTEND
-                             │
-                             ▼
-                            API
-                             │
-                             ▼
-                         BACKEND
-                             │
-          ┌──────────────────┼──────────────────┐
-          ▼                  ▼                  ▼
-      DATABASE             CACHE                AI
-          └──────────────────┼──────────────────┘
-                             ▼
-                           CLOUD
-                             │
-                             ▼
-                        CONTAINERS
-                             │
-                             ▼
-                           CI/CD
-                             │
-                             ▼
-    ╔════════════════════════════════════════════════════╗
-    ║  PRODUCTION                                        ║
-    ╚════════════════════════╦═══════════════════════════╝
-                             ▼
-                      OBSERVABILITY
-                             │
-                             ↺  feeds the next iteration
+     ┌─────────────┐
+     │     USER    │
+     └──────┬──────┘
+            ▼
+        FRONTEND
+            │
+            ▼
+           API
+            │
+            ▼
+         BACKEND
+      ┌──────┼──────┐
+      ▼      ▼      ▼
+  DATABASE CACHE   AI
+      └──────┼──────┘
+            ▼
+          CLOUD
+            │
+            ▼
+       CONTAINERS
+            │
+            ▼
+          CI/CD
+            │
+            ▼
+     ┌─────────────┐
+     │ PRODUCTION  │
+     └──────┬──────┘
+            ▼
+     OBSERVABILITY
+            │
+       ↺ IMPROVEMENT LOOP
 ```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+<sub align="center">USER → FRONTEND → API → BACKEND → (DATABASE · CACHE · AI) → CLOUD → CONTAINERS → CI/CD → PRODUCTION → OBSERVABILITY → IMPROVEMENT LOOP</sub>
+
+---
 
 ## 07 · DELIVERY PIPELINE
 
 ```text
-   CODE ──► GIT ──► PULL REQUEST ──► CI ──► TEST ──► BUILD
-                                                        │
-                                                        ▼
-                                                   CONTAINER
-                                                        │
-                                                        ▼
-   IMPROVE ◄── ROLLBACK ◄── MONITOR ◄────────────── DEPLOY
-      │
-      ↺
+      CODE → GIT → PULL REQUEST → CI → TEST → BUILD
+                                                │
+                                                ▼
+                                            CONTAINER
+                                                │
+                                                ▼
+    IMPROVE ←─ ROLLBACK ←─ MONITOR ←─ DEPLOY ───┘
 ```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+<sub align="center">CODE → GIT → PULL REQUEST → CI → TEST → BUILD → CONTAINER → DEPLOY → MONITOR → ROLLBACK → IMPROVE</sub>
+
+---
 
 ## 08 · ENGINEERING PRINCIPLES
 
@@ -450,7 +447,7 @@ Class 10 study platform — chapter-wise resources and interactive PYQs.
 <tr>
 <td width="33%" valign="top">
 
-`01`
+<kbd>01</kbd>
 
 **CLARITY OVER COMPLEXITY**
 
@@ -459,7 +456,7 @@ Simple systems are easier to maintain.
 </td>
 <td width="33%" valign="top">
 
-`02`
+<kbd>02</kbd>
 
 **AUTOMATION OVER REPETITION**
 
@@ -468,7 +465,7 @@ Repeatable work should become a pipeline.
 </td>
 <td width="33%" valign="top">
 
-`03`
+<kbd>03</kbd>
 
 **SECURITY BY DEFAULT**
 
@@ -479,7 +476,7 @@ Permissions and secrets should be intentional.
 <tr>
 <td width="33%" valign="top">
 
-`04`
+<kbd>04</kbd>
 
 **OBSERVABILITY MATTERS**
 
@@ -488,7 +485,7 @@ Production systems need useful signals.
 </td>
 <td width="33%" valign="top">
 
-`05`
+<kbd>05</kbd>
 
 **SHIP, MEASURE, IMPROVE**
 
@@ -497,7 +494,7 @@ Delivery is a loop, not a finish line.
 </td>
 <td width="33%" valign="top">
 
-`06`
+<kbd>06</kbd>
 
 **OWN THE OUTCOME**
 
@@ -507,21 +504,19 @@ Code is done when it runs reliably for users.
 </tr>
 </table>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+---
 
 ## 09 · NOW EXPLORING
 
 ```text
-                    ◉ KUBERNETES ─────── ◉ TERRAFORM
-                    │                             │
-                    │                             │
-       ◉ OBSERVABILITY ───────  ◆  ─────── ◉ CLOUD INFRASTRUCTURE
-                    │                             │
-                    │                             │
-       ◉ AI APPLICATION ARCHITECTURE ────── ◉ IoT SYSTEMS
+        ◉ KUBERNETES         ◉ TERRAFORM
+        ◉ OBSERVABILITY      ◉ CLOUD INFRASTRUCTURE
+        ◉ AI APPLICATION     ◉ IoT SYSTEMS
 ```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+<sub align="center">KUBERNETES · TERRAFORM · OBSERVABILITY · CLOUD INFRASTRUCTURE · AI APPLICATION ARCHITECTURE · IOT SYSTEMS</sub>
+
+---
 
 ## 10 · SIGNALS
 
@@ -546,7 +541,7 @@ Code is done when it runs reliably for users.
   </picture>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:22D3EE,70:A78BFA,100:05070D&section=header" alt="" />
+---
 
 ## LET'S BUILD SOMETHING
 
@@ -561,13 +556,15 @@ Code is done when it runs reliably for users.
 <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/"><img src="https://img.shields.io/badge/LINKEDIN-0B1120?style=for-the-badge&logo=linkedin&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="LinkedIn" /></a>
 <a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0B1120?style=for-the-badge&logo=vercel&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Projects" /></a>
 
-</div>
+<br/>
 
 ```text
-                     BUILD  ──►  AUTOMATE
-                       ▲              │
-                       │              ▼
-                    IMPROVE  ◄──    SHIP
+                 BUILD ──► AUTOMATE
+                   ▲          │
+                   │          ▼
+                IMPROVE ◄── SHIP
 ```
+
+</div>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:0EA5E9,25:4C1D95,60:1E3A8A,100:05070D&section=footer&text=SYSTEMS%20IN%20MOTION&fontSize=18&fontColor=E2E8F0&fontAlign=50&fontAlignY=70&animation=fadeIn" alt="Systems in motion" />
