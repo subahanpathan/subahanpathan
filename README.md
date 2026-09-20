@@ -1,170 +1,573 @@
-<!-- ══════════════════════════════════════════════════════════════ SUBAHAN PATHAN · ENGINEERING PROFILE Single-file README — every visual is rendered by a hosted service, so nothing else needs to be committed. ══════════════════════════════════════════════════════════════ --> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0B1120,35:1E3A8A,70:4C1D95,100:0EA5E9&section=header&text=SUBAHAN%20PATHAN&fontSize=58&fontColor=F8FAFC&fontAlign=50&fontAlignY=36&desc=FULL-STACK%20%C2%B7%20DEVOPS%20%C2%B7%20CLOUD%20%C2%B7%20AUTOMATION&descSize=17&descAlign=50&descAlignY=57&animation=fadeIn&stroke=58A6FF&strokeWidth=1" alt="Subahan Pathan — Full-Stack · DevOps · Cloud · Automation" /> <div align="center"> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=2600&pause=800&color=58A6FF&center=true&vCenter=true&width=820&lines=Full-Stack+Engineer+%E2%80%94+React+%C2%B7+Next.js+%C2%B7+Node.js;DevOps+%26+Cloud+%E2%80%94+Docker+%C2%B7+Kubernetes+%C2%B7+AWS;Automation+%E2%80%94+CI%2FCD+%C2%B7+IaC+%C2%B7+GitHub+Actions;AI+Applications+%E2%80%94+APIs+%C2%B7+Interfaces+%C2%B7+Workflows" alt="Engineering roles" /> <p><i>Building scalable applications, reliable infrastructure, and automated delivery systems.</i></p> <p> <a href="https://github.com/subahanpathan"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=58A6FF" alt="GitHub" /></a> <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" alt="LinkedIn" /></a> <a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/Projects-0D1117?style=for-the-badge&logo=vercel&logoColor=58A6FF" alt="Projects" /></a> <img src="https://komarev.com/ghpvc/?username=subahanpathan&style=for-the-badge&color=58A6FF&label=VIEWS" alt="Profile views" /> </p> <p> <img src="https://img.shields.io/badge/Open_to-Collaboration-0D1117?style=flat-square&labelColor=0D1117&color=22D3EE" alt="Open to collaboration" /> <img src="https://img.shields.io/badge/Based_in-India-0D1117?style=flat-square&labelColor=0D1117&color=22D3EE" alt="Based in India" /> <img src="https://img.shields.io/badge/Focus-Cloud_Native-0D1117?style=flat-square&labelColor=0D1117&color=22D3EE" alt="Cloud native focus" /> <img src="https://img.shields.io/badge/Mindset-Automate_Everything-0D1117?style=flat-square&labelColor=0D1117&color=22D3EE" alt="Automate everything" /> </p>
+<!-- ═══════════════════════════════════════════════════════════════════
+     SUBAHAN PATHAN — ENGINEERING PROFILE
+     Single file. Every visual renders from Markdown, GitHub-safe HTML,
+     hosted SVG services, or monospace system diagrams.
+     ═══════════════════════════════════════════════════════════════════ -->
 
-<a href="#01--engineering-profile"><img src="https://img.shields.io/badge/01-PROFILE-1F2937?style=flat-square" alt="Profile" /></a> <a href="#03--technology-stack"><img src="https://img.shields.io/badge/03-STACK-1F2937?style=flat-square" alt="Stack" /></a> <a href="#04--featured-production-work"><img src="https://img.shields.io/badge/04-WORK-1F2937?style=flat-square" alt="Work" /></a> <a href="#05--engineering-metrics"><img src="https://img.shields.io/badge/05-METRICS-1F2937?style=flat-square" alt="Metrics" /></a> <a href="#10--lets-connect"><img src="https://img.shields.io/badge/10-CONNECT-1F2937?style=flat-square" alt="Connect" /></a>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:05070D,25:0B1120,55:1E3A8A,80:4C1D95,100:0EA5E9&section=header&text=SUBAHAN%20PATHAN&fontSize=54&fontColor=F8FAFC&fontAlign=50&fontAlignY=34&desc=SOFTWARE%20ENGINEER%20%E2%80%94%20FULL-STACK%20%C2%B7%20CLOUD%20%C2%B7%20DEVOPS%20%C2%B7%20AI%20%C2%B7%20IoT&descSize=16&descAlign=50&descAlignY=55&animation=fadeIn&stroke=58A6FF&strokeWidth=1" alt="Subahan Pathan — Software Engineer" />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:22D3EE,50:58A6FF,100:A78BFA&section=header" alt="" /> </div>
-01 · ENGINEERING PROFILE
-
-I work across the full software lifecycle — from product interfaces and backend services to databases, cloud infrastructure, CI/CD, and operational automation.
-
-Build clean. Automate repeatable work. Ship reliably. Improve continuously.
-
-Area	Focus	Primary Tools
-Full-Stack Engineering	Product interfaces, SSR apps, API-driven UIs	React Next.js TypeScript Node.js Python
-Backend & Data	REST APIs, auth, data modeling, caching	PostgreSQL MongoDB MySQL Redis
-DevOps & Cloud	Containers, orchestration, infrastructure as code	Docker Kubernetes AWS Terraform Nginx
-Delivery & Automation	Pipelines, releases, environment automation	GitHub Actions Jenkins Bash Git
-<details> <summary><b>&nbsp;Currently building &amp; learning</b></summary> <br/>
-Deepening Kubernetes operations — probes, autoscaling, rollout strategies
-Terraform modules for reproducible, reviewable cloud environments
-Observability foundations — structured logs, metrics, actionable alerts
-Practical AI application patterns — retrieval, tool use, streaming interfaces
-</details> <details> <summary><b>&nbsp;How I work with a team</b></summary> <br/>
-Small, reviewable pull requests with a clear intent in the description
-Environments and secrets defined in code, never configured by hand
-Every fix worth repeating becomes a script or a pipeline step
-Documentation written while the context is still fresh
-</details> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:58A6FF,100:0B1120&section=header" alt="" />
-02 · ENGINEERING FOCUS
-<table> <tr> <td width="25%" valign="top">
-Product Engineering
-Responsive interfaces
-Component-driven UI
-API integration
-Full-stack applications
-Production deployments
-</td> <td width="25%" valign="top">
-Backend Systems
-REST APIs
-Authentication
-Data modeling
-PostgreSQL / MongoDB
-Service integration
-</td> <td width="25%" valign="top">
-DevOps & Cloud
-Docker
-Kubernetes
-AWS
-Linux / Nginx
-Infrastructure as code
-</td> <td width="25%" valign="top">
-Automation
-GitHub Actions
-Jenkins
-CI/CD pipelines
-Bash / Python automation
-Monitoring mindset
-</td> </tr> </table> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:A78BFA,100:0B1120&section=header" alt="" />
-03 · TECHNOLOGY STACK
 <div align="center">
 
-Application
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=760&lines=SYSTEMS+IN+MOTION;I+build+interconnected+software+systems;Interfaces+%E2%86%92+APIs+%E2%86%92+Infrastructure+%E2%86%92+Production" alt="Systems in motion" />
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,python,html,css&theme=dark&perline=8" alt="Application technologies" />
+</div>
 
-Data
+```text
+                              ◉  AI
+                              │
+                    ╲         │         ╱
+                      ╲       │       ╱
+          IoT  ◉ ───────────  ◆  ─────────── ◉  CLOUD
+                      ╱       │       ╲
+                    ╱         │         ╲
+                              │
+                 ◉ ───────────┴─────────── ◉
+               API                      DEPLOY
+                              │
+                              ◉
+                           DATABASE
 
-<img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,mysql&theme=dark&perline=8" alt="Data technologies" />
+        ─────────────────────────────────────────────
+              I N T E R C O N N E C T E D   S Y S T E M S
+        ─────────────────────────────────────────────
+```
 
-Cloud & Infrastructure
-
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx&theme=dark&perline=8" alt="Cloud and infrastructure technologies" />
-
-Delivery & Tooling
-
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel,vscode&theme=dark&perline=8" alt="Delivery and tooling technologies" /> <br/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" /> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" /> <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /> <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" /> <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white" alt="Nginx" /> <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" /> </div> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:22D3EE,100:0B1120&section=header" alt="" />
-04 · FEATURED PRODUCTION WORK
-<table> <tr> <td width="50%" valign="top"> <a href="https://erp-topaz-three.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP project preview" /> </a>
-ERP
-
-Production web application focused on business workflow and operational management.
-
-<p> <img src="https://img.shields.io/badge/Full--Stack-1F2937?style=flat-square" alt="Full-stack" /> <img src="https://img.shields.io/badge/Database-1F2937?style=flat-square" alt="Database" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://erp-topaz-three.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/ERP">Source</a> </p> </td> <td width="50%" valign="top"> <a href="https://sub-verse-six.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse project preview" /> </a>
-Sub-Verse
-
-A modern web experience built around interactive product-style presentation.
-
-<p> <img src="https://img.shields.io/badge/React-1F2937?style=flat-square" alt="React" /> <img src="https://img.shields.io/badge/Next.js-1F2937?style=flat-square" alt="Next.js" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://sub-verse-six.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/-SubVerse">Source</a> </p> </td> </tr> <tr> <td width="50%" valign="top"> <a href="https://meter-flow-mu.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow project preview" /> </a>
-Meter Flow
-
-Web application for managing meter-oriented operational workflows and data.
-
-<p> <img src="https://img.shields.io/badge/Full--Stack-1F2937?style=flat-square" alt="Full-stack" /> <img src="https://img.shields.io/badge/Data-1F2937?style=flat-square" alt="Data" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://meter-flow-mu.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/meter-flow">Source</a> </p> </td> <td width="50%" valign="top"> <a href="https://bug-tracker-omega-three.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker project preview" /> </a>
-Bug Tracker
-
-Application for organizing software issues, tracking work, and improving development visibility.
-
-<p> <img src="https://img.shields.io/badge/React-1F2937?style=flat-square" alt="React" /> <img src="https://img.shields.io/badge/Node.js-1F2937?style=flat-square" alt="Node.js" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://bug-tracker-omega-three.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/Bug-Tracker">Source</a> </p> </td> </tr> <tr> <td width="50%" valign="top"> <a href="https://nexus-ai-inky-iota.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI project preview" /> </a>
-Nexus AI
-
-AI-focused application exploring practical interfaces and intelligent application workflows.
-
-<p> <img src="https://img.shields.io/badge/AI-1F2937?style=flat-square" alt="AI" /> <img src="https://img.shields.io/badge/API_Integration-1F2937?style=flat-square" alt="API integration" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://nexus-ai-inky-iota.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/nexus-ai">Source</a> </p> </td> <td width="50%" valign="top"> <a href="https://signflow-olive-three.vercel.app/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow project preview" /> </a>
-SignFlow
-
-Web application centered around digital workflow and document-signing experiences.
-
-<p> <img src="https://img.shields.io/badge/Full--Stack-1F2937?style=flat-square" alt="Full-stack" /> <img src="https://img.shields.io/badge/Workflow-1F2937?style=flat-square" alt="Workflow" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://signflow-olive-three.vercel.app/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/signflow">Source</a> </p> </td> </tr> <tr> <td width="50%" valign="top"> <a href="https://subahanpathan.github.io/One-For-All/"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All project preview" /> </a>
-One-For-All
-
-Educational platform for Class 10 students featuring chapter-wise study resources, interactive PYQs, and learning materials across multiple subjects.
-
-<p> <img src="https://img.shields.io/badge/EdTech-1F2937?style=flat-square" alt="EdTech" /> <img src="https://img.shields.io/badge/Interactive-1F2937?style=flat-square" alt="Interactive" /> <img src="https://img.shields.io/badge/●_Live-166534?style=flat-square" alt="Live" /> </p> <p> <a href="https://subahanpathan.github.io/One-For-All/"><b>Live Preview</b></a> · <a href="https://github.com/subahanpathan/One-For-All">Source</a> </p> </td> <td width="50%" valign="top">
-
-<br/><br/>
-
-<div align="center"> <a href="https://github.com/subahanpathan?tab=repositories"> <img src="https://img.shields.io/badge/Browse_all_repositories-0D1117?style=for-the-badge&logo=github&logoColor=58A6FF" alt="Browse all repositories" /> </a> <br/><br/> <sub>More experiments, tooling and work in progress live in the full repository list.</sub> </div> </td> </tr> </table> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:58A6FF,100:0B1120&section=header" alt="" />
-05 · ENGINEERING METRICS
-<p align="center"> <img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg" alt="GitHub engineering metrics" /> </p> <p align="center"> <img height="170" src="https://github-readme-stats.vercel.app/api?username=subahanpathan&show_icons=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=A78BFA&text_color=C9D1D9&include_all_commits=true&rank_icon=github" alt="GitHub stats" /> <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=subahanpathan&layout=compact&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&langs_count=8" alt="Top languages" /> </p> <p align="center"> <img height="170" src="https://streak-stats.demolab.com?user=subahanpathan&hide_border=true&background=0D1117&stroke=1E293B&ring=58A6FF&fire=A78BFA&currStreakLabel=58A6FF&sideLabels=C9D1D9&dates=8B949E" alt="Contribution streak" /> </p> <p align="center"> <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=subahanpathan&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=A78BFA&area=true&area_color=1E3A8A&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution activity graph" /> </p> <p align="center"> <img src="https://github-profile-trophy.vercel.app/?username=subahanpathan&theme=discord&no-frame=true&no-bg=true&margin-w=8&column=7" alt="GitHub trophies" /> </p> <p align="center"><sub>Metrics are generated automatically from GitHub activity using GitHub Actions.</sub></p> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:A78BFA,100:0B1120&section=header" alt="" />
-06 · CONTRIBUTION ACTIVITY
-<p align="center"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"> <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg" alt="GitHub contribution snake animation" /> </picture> </p> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:22D3EE,100:0B1120&section=header" alt="" />
-07 · HOW I ENGINEER
-<p align="center"> <img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/main/assets/engineering-lifecycle.png" alt="From ideas to impact — engineering lifecycle" /> </p>
-text
-   IDEA → DESIGN → BUILD → TEST → CONTAINERIZE → CI/CD → DEPLOY → OBSERVE
-     ↑                                                              │
-     └──────────────────  measure · learn · improve  ───────────────┘
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:58A6FF,100:0B1120&section=header" alt="" />
-08 · ENGINEERING PRINCIPLES
-<table> <tr> <td width="50%" valign="top">
-Clarity over complexity — simple systems are easier to maintain.
-Automation over repetition — repeatable work should become a pipeline.
-Security by default — permissions and secrets should be intentional.
-</td> <td width="50%" valign="top">
-Observability matters — production systems need useful signals.
-Ship, measure, improve — delivery is a loop, not a finish line.
-Own the outcome — code is done when it runs reliably for users.
-</td> </tr> </table> <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:A78BFA,100:0B1120&section=header" alt="" />
-09 · CURRENT DIRECTION
-Track	Direction	Progress
-Full-Stack Development	Production-grade app architecture	█████████░
-CI/CD & Automation	Pipelines, releases, quality gates	████████░░
-DevOps & Containers	Docker → Kubernetes operations	███████░░░
-Cloud Infrastructure	AWS + Terraform environments	██████░░░░
-AI-Enabled Applications	Practical AI product workflows	██████░░░░
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:0B1120,50:22D3EE,100:0B1120&section=header" alt="" />
-10 · LET'S CONNECT
 <div align="center">
 
-Open to collaboration on full-stack products, cloud infrastructure, and automation tooling.
+<a href="#01--engineering-core"><img src="https://img.shields.io/badge/01-CORE-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Core" /></a>
+<a href="#03--technology-constellation"><img src="https://img.shields.io/badge/03-STACK-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Stack" /></a>
+<a href="#04--flagship-systems"><img src="https://img.shields.io/badge/04-FLAGSHIP-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Flagship systems" /></a>
+<a href="#05--project-gallery"><img src="https://img.shields.io/badge/05-PROJECTS-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Projects" /></a>
+<a href="#10--signals"><img src="https://img.shields.io/badge/10-SIGNALS-0B1120?style=flat-square&labelColor=05070D&color=1E293B" alt="Signals" /></a>
+<a href="#lets-build-something"><img src="https://img.shields.io/badge/CONNECT-0B1120?style=flat-square&labelColor=05070D&color=0E7490" alt="Connect" /></a>
 
-<p> <a href="https://github.com/subahanpathan"><img src="https://img.shields.io/badge/GitHub-View_Profile-0D1117?style=for-the-badge&logo=github&logoColor=58A6FF" alt="GitHub profile" /></a> <a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0D1117?style=for-the-badge&logo=linkedin&logoColor=58A6FF" alt="LinkedIn profile" /></a> <a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/Projects-Explore-0D1117?style=for-the-badge&logo=vercel&logoColor=58A6FF" alt="Projects" /></a> </p> </div> <!-- PROJECTS_START -->
-11 · PROJECT INDEX
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:22D3EE,60:58A6FF,100:05070D&section=header" alt="" />
 
-Automatically refreshed from GitHub repository activity.
+</div>
 
-Repository	Description	Stars	Updated
-quote-scraper	A beautiful desktop quote scraping app	0	1y ago
-One-For-All	No repository description provided.	1	6mo ago
-DriveLens	No repository description provided.	0	21h ago
-Leetcode	No repository description provided.	0	22h ago
-Election	No repository description provided.	0	1d ago
--SubVerse	No repository description provided.	0	1mo ago
-Bug-Tracker	No repository description provided.	0	1mo ago
-signflow	No repository description provided.	0	1mo ago
-ERP	No repository description provided.	0	2mo ago
-nexus-ai	No repository description provided.	0	2mo ago
+## 01 · ENGINEERING CORE
 
-Featured production projects are maintained separately above.
+The shape of what I build — data moving through layers, not a list of tools.
 
-<!-- PROJECTS_END --> <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=150&color=0:0EA5E9,35:4C1D95,70:1E3A8A,100:0B1120&section=footer&text=BUILD%20%C2%B7%20AUTOMATE%20%C2%B7%20SHIP%20%C2%B7%20IMPROVE&fontSize=20&fontColor=E2E8F0&fontAlign=50&fontAlignY=68&animation=fadeIn" alt="Build · Automate · Ship · Improve" /> <div align="center"><sub>Designed and maintained as an automated engineering profile.</sub></div>
+```text
+                     ┌──────────────  AI  ──────────────┐
+                     │                                  │
+                     ▼                                  │
+      FRONTEND ─────────────► API ─────────────► BACKEND ┘
+          │                    │                    │
+          │                    ▼                    ▼
+          │                 DATABASE              CACHE
+          │
+          ▼
+    CLOUD / DEVOPS
+          │
+          ▼
+    CI/CD PIPELINE
+          │
+          ▼
+      PRODUCTION
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 02 · ENGINEERING PROFILE
+
+> I build practical, production-oriented systems across the full software
+> lifecycle — from interfaces and APIs to cloud infrastructure, automation
+> and operational systems.
+
+```text
+        ┌──► DISCOVER ──► DESIGN ──► BUILD ──► TEST ──┐
+        │                                             │
+     IMPROVE                                      AUTOMATE
+        │                                             │
+        └──── OBSERVE ◄──── DEPLOY ◄──────────────────┘
+```
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Application layer**
+
+Product interfaces, server-rendered apps, API-driven UIs, component systems and production deployments.
+
+</td>
+<td width="50%" valign="top">
+
+**Systems layer**
+
+REST APIs, authentication, data modeling, containers, orchestration, infrastructure as code and delivery pipelines.
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 03 · TECHNOLOGY CONSTELLATION
+
+```text
+                             CLOUD
+                               │
+                 ┌─────────────┼─────────────┐
+                 │             │             │
+                AWS         DOCKER          K8S
+                 │             │             │
+                 └─────────────┼─────────────┘
+                               │
+                          APPLICATION
+                               │
+                 ┌─────────────┼─────────────┐
+               React        Next.js         Node
+                 └─────────────┼─────────────┘
+                               │
+                              DATA
+```
+
+<table>
+<tr>
+<td width="25%" valign="top">
+
+**01 · APPLICATION**
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,ts,nodejs,python&theme=dark&perline=5" alt="React, Next.js, TypeScript, Node.js, Python" />
+
+React · Next.js · TypeScript · Node.js · Python
+
+</td>
+<td width="25%" valign="top">
+
+**02 · DATA**
+
+<img src="https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,firebase&theme=dark&perline=5" alt="PostgreSQL, MongoDB, MySQL, Redis, Firebase" />
+
+PostgreSQL · MongoDB · MySQL · Redis · Firebase
+
+</td>
+<td width="25%" valign="top">
+
+**03 · CLOUD**
+
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,nginx&theme=dark&perline=6" alt="AWS, Docker, Kubernetes, Terraform, Linux, Nginx" />
+
+AWS · Docker · Kubernetes · Terraform · Linux · Nginx
+
+</td>
+<td width="25%" valign="top">
+
+**04 · DELIVERY**
+
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,vercel&theme=dark&perline=5" alt="Git, GitHub, GitHub Actions, Jenkins, Vercel" />
+
+Git · GitHub · GitHub Actions · Jenkins · Vercel
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:A78BFA,70:58A6FF,100:05070D&section=header" alt="" />
+
+## 04 · FLAGSHIP SYSTEMS
+
+### ARGUS
+
+<div align="center">
+
+`SECURITY` · `MONITORING` · `THREAT DETECTION`
+
+<a href="ARGUS_LIVE_URL">
+  <img width="92%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/argus.png" alt="ARGUS — security monitoring system" />
+</a>
+
+</div>
+
+A security operations system that watches process activity, analyses behaviour and surfaces threats on a live dashboard.
+
+```text
+    ┌──────────────────────────────────────────────┐
+    │                   SYSTEM                     │
+    └───────────────────────┬──────────────────────┘
+                            ▼
+                   PROCESS  ACTIVITY
+                            │
+                            ▼
+                  MONITORING  ENGINE
+                            │
+                            ▼
+                  ACTIVITY  ANALYSIS
+                            │
+                            ▼
+                  THREAT  DETECTION
+                            │
+                            ▼
+    ┌──────────────────────────────────────────────┐
+    │             SECURITY  DASHBOARD              │
+    └──────────────────────────────────────────────┘
+```
+
+<div align="center">
+
+<a href="ARGUS_LIVE_URL"><img src="https://img.shields.io/badge/LIVE_DEMO_↗-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
+&nbsp;
+<a href="ARGUS_REPO_URL"><img src="https://img.shields.io/badge/SOURCE_CODE_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+### MEDISAFE
+
+<div align="center">
+
+`PHARMACEUTICAL IoT` · `COLD-CHAIN MONITORING`
+
+<a href="MEDISAFE_LIVE_URL">
+  <img width="92%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/medisafe.png" alt="MEDISAFE — pharmaceutical cold-chain monitoring" />
+</a>
+
+</div>
+
+An IoT cold-chain platform: sensors on the crate, telemetry in the cloud, alerts and analytics for pharmaceutical logistics.
+
+```text
+                         ESP32
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+      TEMPERATURE      HUMIDITY       VIBRATION
+            └──────────────┼──────────────┘
+                           ▼
+                       FIREBASE
+                           │
+                           ▼
+                       MEDISAFE
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+         ALERTS         COOLING       ANALYTICS
+                           │
+                           ▼
+                       LOGISTICS
+                           │
+                           ▼
+              PHARMACEUTICAL  MONITORING
+```
+
+<div align="center">
+
+<a href="MEDISAFE_LIVE_URL"><img src="https://img.shields.io/badge/LIVE_DEMO_↗-0B1120?style=for-the-badge&labelColor=05070D&color=0E7490" alt="Live demo" /></a>
+&nbsp;
+<a href="MEDISAFE_REPO_URL"><img src="https://img.shields.io/badge/SOURCE_CODE_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Source code" /></a>
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:58A6FF,70:22D3EE,100:05070D&section=header" alt="" />
+
+## 05 · PROJECT GALLERY
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://erp-topaz-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/erp.png" alt="ERP preview" /></a>
+
+**ERP**
+
+Business workflow and operational management platform.
+
+`Full-Stack` · `Database` · `Deployment`
+
+<a href="https://erp-topaz-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/ERP">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://sub-verse-six.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/subverse.png" alt="Sub-Verse preview" /></a>
+
+**SUB-VERSE**
+
+Interactive, product-style web experience.
+
+`React` · `Next.js` · `TypeScript`
+
+<a href="https://sub-verse-six.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/-SubVerse">SOURCE ↗</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://meter-flow-mu.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/meter-flow.png" alt="Meter Flow preview" /></a>
+
+**METER FLOW**
+
+Meter-oriented operational workflows and data.
+
+`Full-Stack` · `Data` · `Deployment`
+
+<a href="https://meter-flow-mu.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/meter-flow">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://bug-tracker-omega-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/bug-tracker.png" alt="Bug Tracker preview" /></a>
+
+**BUG TRACKER**
+
+Issue organisation and development visibility.
+
+`React` · `Node.js` · `Database`
+
+<a href="https://bug-tracker-omega-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/Bug-Tracker">SOURCE ↗</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://nexus-ai-inky-iota.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/nexus-ai.png" alt="Nexus AI preview" /></a>
+
+**NEXUS AI**
+
+Practical interfaces for intelligent application workflows.
+
+`AI` · `Full-Stack` · `API Integration`
+
+<a href="https://nexus-ai-inky-iota.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/nexus-ai">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://signflow-olive-three.vercel.app/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/signflow.png" alt="SignFlow preview" /></a>
+
+**SIGNFLOW**
+
+Digital workflow and document-signing experiences.
+
+`Full-Stack` · `Workflow` · `Deployment`
+
+<a href="https://signflow-olive-three.vercel.app/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/signflow">SOURCE ↗</a>
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://subahanpathan.github.io/One-For-All/"><img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/previews/one-for-all.png" alt="One-For-All preview" /></a>
+
+**ONE-FOR-ALL**
+
+Class 10 study platform — chapter-wise resources and interactive PYQs.
+
+`Education` · `Web Application` · `Interactive`
+
+<a href="https://subahanpathan.github.io/One-For-All/">LIVE ↗</a> · <a href="https://github.com/subahanpathan/One-For-All">SOURCE ↗</a>
+
+</td>
+<td width="50%" valign="top">
+
+<br/><br/><br/>
+
+<div align="center">
+
+<a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/ALL_REPOSITORIES_↗-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="All repositories" /></a>
+
+<br/>
+
+<sub>Experiments, tooling and work in progress.</sub>
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 06 · SYSTEM ARCHITECTURE
+
+```text
+    ╔════════════════════════════════════════════════════╗
+    ║  USER                                              ║
+    ╚════════════════════════╦═══════════════════════════╝
+                             ▼
+                        FRONTEND
+                             │
+                             ▼
+                            API
+                             │
+                             ▼
+                         BACKEND
+                             │
+          ┌──────────────────┼──────────────────┐
+          ▼                  ▼                  ▼
+      DATABASE             CACHE                AI
+          └──────────────────┼──────────────────┘
+                             ▼
+                           CLOUD
+                             │
+                             ▼
+                        CONTAINERS
+                             │
+                             ▼
+                           CI/CD
+                             │
+                             ▼
+    ╔════════════════════════════════════════════════════╗
+    ║  PRODUCTION                                        ║
+    ╚════════════════════════╦═══════════════════════════╝
+                             ▼
+                      OBSERVABILITY
+                             │
+                             ↺  feeds the next iteration
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 07 · DELIVERY PIPELINE
+
+```text
+   CODE ──► GIT ──► PULL REQUEST ──► CI ──► TEST ──► BUILD
+                                                        │
+                                                        ▼
+                                                   CONTAINER
+                                                        │
+                                                        ▼
+   IMPROVE ◄── ROLLBACK ◄── MONITOR ◄────────────── DEPLOY
+      │
+      ↺
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 08 · ENGINEERING PRINCIPLES
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+`01`
+
+**CLARITY OVER COMPLEXITY**
+
+Simple systems are easier to maintain.
+
+</td>
+<td width="33%" valign="top">
+
+`02`
+
+**AUTOMATION OVER REPETITION**
+
+Repeatable work should become a pipeline.
+
+</td>
+<td width="33%" valign="top">
+
+`03`
+
+**SECURITY BY DEFAULT**
+
+Permissions and secrets should be intentional.
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+
+`04`
+
+**OBSERVABILITY MATTERS**
+
+Production systems need useful signals.
+
+</td>
+<td width="33%" valign="top">
+
+`05`
+
+**SHIP, MEASURE, IMPROVE**
+
+Delivery is a loop, not a finish line.
+
+</td>
+<td width="33%" valign="top">
+
+`06`
+
+**OWN THE OUTCOME**
+
+Code is done when it runs reliably for users.
+
+</td>
+</tr>
+</table>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 09 · NOW EXPLORING
+
+```text
+                    ◉ KUBERNETES ─────── ◉ TERRAFORM
+                    │                             │
+                    │                             │
+       ◉ OBSERVABILITY ───────  ◆  ─────── ◉ CLOUD INFRASTRUCTURE
+                    │                             │
+                    │                             │
+       ◉ AI APPLICATION ARCHITECTURE ────── ◉ IoT SYSTEMS
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,50:1E293B,100:05070D&section=header" alt="" />
+
+## 10 · SIGNALS
+
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/profile/stats.svg" alt="Engineering metrics" />
+</p>
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=subahanpathan&show_icons=true&hide_border=true&bg_color=05070D&title_color=58A6FF&icon_color=A78BFA&text_color=CBD5E1&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=subahanpathan&layout=compact&hide_border=true&bg_color=05070D&title_color=58A6FF&text_color=CBD5E1&langs_count=8" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=subahanpathan&bg_color=05070D&color=CBD5E1&line=58A6FF&point=A78BFA&area=true&area_color=1E3A8A&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution activity" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
+  </picture>
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:05070D,30:22D3EE,70:A78BFA,100:05070D&section=header" alt="" />
+
+## LET'S BUILD SOMETHING
+
+<div align="center">
+
+**Have an idea, system, or technical problem?**
+**Let's turn it into something real.**
+
+<br/>
+
+<a href="https://github.com/subahanpathan"><img src="https://img.shields.io/badge/GITHUB-0B1120?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="GitHub" /></a>
+<a href="https://www.linkedin.com/in/subahan-pathan-a991a1337/"><img src="https://img.shields.io/badge/LINKEDIN-0B1120?style=for-the-badge&logo=linkedin&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="LinkedIn" /></a>
+<a href="https://github.com/subahanpathan?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0B1120?style=for-the-badge&logo=vercel&logoColor=58A6FF&labelColor=05070D&color=1E293B" alt="Projects" /></a>
+
+</div>
+
+```text
+                     BUILD  ──►  AUTOMATE
+                       ▲              │
+                       │              ▼
+                    IMPROVE  ◄──    SHIP
+```
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:0EA5E9,25:4C1D95,60:1E3A8A,100:05070D&section=footer&text=SYSTEMS%20IN%20MOTION&fontSize=18&fontColor=E2E8F0&fontAlign=50&fontAlignY=70&animation=fadeIn" alt="Systems in motion" />
