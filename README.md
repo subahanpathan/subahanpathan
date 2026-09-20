@@ -424,25 +424,70 @@ Explore additional experiments, learning projects, and repositories on my GitHub
 
 ---
 
-# 🐍 Contribution Activity
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--                    CONTRIBUTION ACTIVITY                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
 
-<p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg">
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg">
-    <img
-      src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake.svg"
-      alt="GitHub contribution snake animation"
-    >
-  </picture>
+<div align="center">
+
+## ⚡ Contribution Activity
+
+<p>
+  <sub>CODE • SHIP • AUTOMATE • REPEAT</sub>
 </p>
 
----
+<img
+  src="https://raw.githubusercontent.com/subahanpathan/subahanpathan/output/github-contribution-grid-snake-dark.svg"
+  alt="GitHub contribution activity"
+  width="100%"
+/>
 
+<br>
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+### ◉ BUILD
+
+Building full-stack  
+applications & systems
+
+</td>
+
+<td align="center" width="33%">
+
+### ◉ SHIP
+
+Deploying products  
+to production
+
+</td>
+
+<td align="center" width="33%">
+
+### ◉ AUTOMATE
+
+Improving CI/CD  
+& engineering workflows
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<img
+  src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161b22,100:0d1117&height=2&section=header"
+  width="90%"
+/>
+
+<p>
+  <b>ACTIVE ENGINEERING SIGNAL</b><br>
+  <sub>Every contribution represents another iteration of the system.</sub>
+</p>
+
+</div>
 # 🧠 Problem Solving & Learning
 
 I'm continuously improving my engineering skills through:
